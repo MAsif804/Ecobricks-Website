@@ -17,7 +17,7 @@ import rightSide from "./right-side.svg";
 import boxsimg1 from "./box-1.png";
 import boxsimg2 from "./box-2.png";
 import boxsimg3 from "./box-3.png";
-import starFull from "./star.svg";
+import starFull from "./Star.svg";
 import starhalf from "./star-bg.svg";
 import goodHealth from "./good-health.png";
 import cleanWater from "./clean-water.png";
