@@ -1,0 +1,53 @@
+#goals .wrapper{
+    display: flex;
+    /* width: 1440px; */
+    padding: 120px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+#goals .wrapper .main-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+#goals .wrapper .content-container{
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    gap: 31.242px;
+    align-self: stretch;
+}
+
+#goals .wrapper .content-container .mean-dev{
+    display: flex;
+    align-items: center;
+    gap: 23.432px;
+}
+
+#goals .wrapper .content-container .mean-dev img{
+    width: 240.176px;
+    height: 240.176px;
+    border-radius: 5.858px;
+    background: url(<path-to-image>) lightgray -2.278px -2.278px / 101.897% 102.033% no-repeat;
+}
+
+#goals .wrapper .content-container .sub-dev{
+    display: flex;
+    align-items: flex-start;
+    gap: 23.432px;
+}
+
+#goals .wrapper .content-container .sub-dev img{
+    width: 238.604px;
+    height: 238.604px;
+    border-radius: 5.503px;
+    background: url(<path-to-image>) lightgray -1.965px -2.752px / 101.977% 102.142% no-repeat;
+}

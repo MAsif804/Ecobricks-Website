@@ -1,0 +1,267 @@
+#product .wrapper{
+    display: flex;
+    /* width: 1536px; */
+    padding: 120px 0px 120px 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 38px;
+}
+
+#product .wrapper .content-container{
+    display: flex;
+    width: 88%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#product .wrapper .content-container h2{
+    color: #000;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+
+}
+
+
+#product .wrapper .content-container .product-btns{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+#product .wrapper .content-container .product-btns button{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 14.583px 14.58px 14.584px 14.587px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1125px;
+    border: 1.042px solid var(--Blue-blue-200, #B4BBC6);
+    cursor: pointer;
+    
+}
+
+#product .wrapper .content-container .product-btns button:hover{
+    background: var(--Blue-blue-200, #B4BBC6);
+    border: none;
+}
+
+#product .wrapper .product-items{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    /* overflow-x: auto; */
+}
+
+#product .wrapper .product-items .product-box{
+    display: flex;
+    width: 29%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 32px;
+    background: #EDF5EE;
+    position: relative;
+
+
+}
+
+#product .wrapper .product-items .product-box .new-btn{
+    position: absolute;
+    right: 13px;
+    top: 14px;
+    /* width: 100%; */
+    display: flex;
+    padding: 6px 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: #CD4949;
+    border: none; 
+    cursor: pointer;
+
+}
+
+
+#product .wrapper .product-items .product-box .new-btn .new-btn-text{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+#product .wrapper .product-items .product-box .box-img{
+    width: 100%;
+    height: 98%; 
+    border-radius: 14px;
+    background: url(<path-to-image>) lightgray -73px -0.021px / 138.189% 100.012% no-repeat;
+}
+
+#product .wrapper .product-items .product-box .product-box-items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    align-self: stretch;
+}
+
+#product .wrapper .product-items .product-box .product-box-items .product-sub-box-items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+#product .wrapper .product-items .product-box .product-box-items .product-sub-box-items .product-box-main-text{
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    /* gap: 25px; */
+}
+
+#product .wrapper .product-items .product-box .product-box-items .product-sub-box-items .product-box-main-text .product-box-main-text-frist{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    flex: 1 0 0;
+}
+
+#product .wrapper .product-items .product-box .product-box-items .product-sub-box-items .product-box-main-text-frist .main-text{
+    color: var(--Black, #06121B);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 28.8px */
+    margin: 0;
+}
+
+
+#product .wrapper .product-items .product-box .product-box-items .product-sub-box-items .product-box-main-text-frist .sub-text{
+    color: var(--Black, #06121B);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    opacity: 0.7;
+    margin: 0;
+    align-self: stretch;
+}
+
+#product .wrapper .product-items .product-box .product-box-items .product-sub-box-items .product-box-main-text .outer-text{
+    color: var(--Gray-700, #344054);
+    text-align: right;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+#product .wrapper .product-items .product-box .product-box-items .product-sub-box-items .star-group{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    align-self: stretch;
+}
+
+#product .wrapper .product-items .product-box .product-box-items .product-sub-box-items .star-group .stars{
+    display: flex;
+    /* width: 85.181px; */
+    height: 17.036px;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+#product .wrapper .product-items .product-box .product-box-items .product-sub-box-items .star-group p{
+    color: var(--Gray-400, #98A2B3);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.043px; /* 143.161% */
+    margin: 0;
+}
+
+#product .wrapper .product-items .product-box .product-box-items  .product-sub-box-btns {
+    display: flex;
+    /* height: 36px; */
+    align-items: flex-start;
+    gap: 11px;
+    align-self: stretch;
+   
+}
+
+#product .wrapper .product-items .product-box .product-box-items  .product-sub-box-btns button{
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    cursor: pointer;
+}
+
+#product .wrapper .product-items .product-box .product-box-items  .product-sub-box-btns .frist-btn{
+    border-radius: 50px;
+    border: 1px solid #3A4980;
+    background: #417E36;
+
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+#product .wrapper .product-items .product-box .product-box-items  .product-sub-box-btns .frist-btn p{
+    color: var(--White, #FFF);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    margin: 0;
+}
+
+#product .wrapper .product-items .product-box .product-box-items  .product-sub-box-btns .second-btn{
+    border-radius: 50px;
+    border: 1px solid var(--Gray-300, #D0D5DD);
+    background: var(--White, #FFF);
+
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+#product .wrapper .product-items .product-box .product-box-items  .product-sub-box-btns .second-btn p{
+    color: var(--White, #FFF);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

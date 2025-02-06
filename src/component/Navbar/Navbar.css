@@ -1,0 +1,121 @@
+nav{
+    display: flex;
+    padding: 8px 72px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+}
+
+nav .logo-ecobricks{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+nav .logo-ecobricks img{
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+nav .logo-ecobricks p{
+    color: #F4F4F4;
+    /* color: #fff; */
+    font-family: Lato;
+    font-size: 24.216px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 27.676px; /* 114.286% */
+    margin: 0;
+
+}
+
+nav .navbar-items{
+    display: flex;
+    width: 710px;
+    padding: 8px 8px 8px 24px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+nav .navbar-items .navbar-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    list-style: none;
+    /* padding: 0; */
+
+}
+
+nav .navbar-items .navbar-list li a{
+    color: var(--White, #FFF);
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    margin: 0;
+    display: flex;
+    /* height: 30px; */
+    padding:0 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    opacity: 0.9;
+}
+
+nav .navbar-items .navbar-list li a:hover{
+    opacity: 1;
+    background: #CFF9D9;
+    border-radius: 48px;
+    color: #136626;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+}
+
+
+nav .navbar-items .contact-btn{
+    border-radius: 48px;
+    display: flex;
+    padding: 10px 20px;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    gap: 10px;
+    background: #4E9741;
+    border: none; 
+    cursor: pointer;
+}
+
+nav .navbar-items .contact-btn p{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+nav .navbar-items .contact-btn img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+
