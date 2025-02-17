@@ -1,0 +1,196 @@
+#project .wrapper {
+  display: flex;
+  /* width: 1739.333px; */
+  padding: 120px 0px 120px 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 38px;
+}
+
+#project .wrapper .content-container {
+  display: flex;
+  /* width: 88%;  */
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#project .wrapper .content-container h2 {
+  color: #000;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+#project .wrapper .content-container .project-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+#project .wrapper .content-container .project-btns button {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 14.583px 14.58px 14.584px 14.587px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1125px;
+    border: 1.042px solid var(--Blue-blue-200, #b4bbc6);
+    cursor: pointer;
+    background: none;
+}
+
+#project .wrapper .content-container .project-btns button:hover {
+  background: var(--Blue-blue-200, #b4bbc6);
+  border: none;
+}
+
+#project .wrapper .project-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  width: 162rem;
+  overflow-x: auto;
+}
+
+#project .wrapper .project-items .project-box {
+  display: flex;
+  width: 29%;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 32px;
+  background: #edf5ee;
+}
+
+#project .wrapper .project-items .project-box .box-img {
+  width: 100%;
+  height: 98%;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+#project .wrapper .project-items .project-box .sub-project-box {
+  display: flex;
+  padding-bottom: 4px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  align-self: stretch;
+}
+
+#project .wrapper .project-items .project-box .sub-project-box .main-text {
+  color: var(--Black, #06121b);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 28.8px */
+  margin: 0;
+}
+
+
+#project .wrapper .project-items .project-box .sub-project-box .sub-text {
+    
+        overflow: hidden;
+        color: var(--Black, #06121B);
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Limit to 3 lines */
+        -webkit-box-orient: vertical;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        margin: 0;
+        opacity: 0.7;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: none;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+
+
+       
+}
+
+#project .wrapper .project-items .project-box .sub-project-box .sub-btns {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+#project .wrapper .project-items .project-box .sub-project-box .sub-btns button {
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+#project .wrapper .project-items .project-box .sub-project-box .sub-btns .view-btn {
+    border-radius: 50px;
+    background: #417E36;
+    border: none;
+    
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+#project .wrapper .project-items .project-box .sub-project-box .sub-btns .view-btn p {
+    color: var(--White, #FFF);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    margin: 0;
+}
+
+#project .wrapper .project-items .project-box .sub-project-box .sub-btns .view-btn:hover {
+    background: #3A4980;
+}
+
+#project .wrapper .project-items .project-box .sub-project-box .sub-btns .view-btn img {
+    display: flex;
+    width: 15px;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#project .wrapper .project-items .project-box .sub-project-box .sub-btns .detials-btn {
+    border-radius: 50px;
+    background: #417E36;
+    border: none;
+    display: none;
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+#project .wrapper .project-items .project-box .sub-project-box .sub-btns .detials-btn p {
+    color: var(--White, #FFF);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    margin: 0;
+}
+
+
+
+

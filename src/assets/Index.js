@@ -26,6 +26,23 @@ import responsible from "./responsible.png";
 import cunate from "./cunate.png";
 import lifebelow from "./life-below.png";
 import lifeland from "./life-land.png";
+import project1 from "./project-1.png";
+import project2 from "./project-2.png";
+import project3 from "./project-3.png";
+import project4 from "./project-4.png";
+import arrowicons from "./arrow-icons.svg";
+import frameIcon from "./frame-icon.svg";
+import ChevronDown from "./chevron-down.svg";
+import letsTalk from "./let-talk.png";
+import emailIcon from "./email-icon.svg";
+import phoneIcon from "./phone-icon.svg";
+import mapIcon from "./map-icon.svg";
+import facebookIcon from "./facebooks-icon.svg";
+import instagramIcon from "./instagram-icon.svg";
+import linkinIcon from "./link-in-icon.svg";
+
+
+
 
 
 
@@ -62,4 +79,18 @@ export {
     cunate,
     lifebelow,
     lifeland,
+    project1,
+    project2,    
+    project3,
+    project4,
+    arrowicons,
+    frameIcon,
+    ChevronDown,
+    letsTalk,
+    emailIcon,
+    phoneIcon,
+    mapIcon,
+    facebookIcon,
+    instagramIcon,
+    linkinIcon,
 };

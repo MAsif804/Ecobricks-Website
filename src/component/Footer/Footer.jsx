@@ -30,14 +30,14 @@ const Footer = () => {
             </div>
             <div className="soical-icon">
             <button className='icons' onClick={() => window.location.href = "#"}>
-                   <img src={youtubeIcon}/>           
-                </button>
-                <button className='icons' onClick={() => window.location.href = "#"}>
-                   <img src={linkedinIcon}/>           
-                </button>
-                <button className='icons' onClick={() => window.location.href = "#"}>
-                   <img src={linkedinIcon}/>           
-                </button>
+                 <img src={youtubeIcon}/>           
+            </button>
+            <button className='icons' onClick={() => window.location.href = "#"}>
+               <img src={linkedinIcon}/>           
+            </button>
+            <button className='icons' onClick={() => window.location.href = "#"}>
+               <img src={linkedinIcon}/>           
+            </button>
             </div>
             <div className="quick-links">
               <h6>Quick Links</h6>

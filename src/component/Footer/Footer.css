@@ -23,7 +23,7 @@ footer .footer-items{
 
 footer .footer-items .logo-text{
     display: flex;
-    /* width: 279px; */
+    /* width: 279px; */  width: 30%;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
@@ -32,6 +32,12 @@ footer .footer-items .logo-ecobricks{
     display: flex;
     align-items: center;
     gap: 8.649px;
+}
+
+footer .footer-items .logo-ecobricks img{
+    width: 50.162px;
+    height: 51.027px;
+    object-fit: contain;
 }
 
 footer .footer-items .logo-ecobricks p{
