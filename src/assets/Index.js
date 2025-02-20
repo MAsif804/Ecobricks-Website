@@ -40,6 +40,8 @@ import mapIcon from "./map-icon.svg";
 import facebookIcon from "./facebooks-icon.svg";
 import instagramIcon from "./instagram-icon.svg";
 import linkinIcon from "./link-in-icon.svg";
+import ecobricksLogo2 from "./ecobricks-logo-2.png";
+import emptyStar from "./empty-star.svg";
 
 
 
@@ -93,4 +95,6 @@ export {
     facebookIcon,
     instagramIcon,
     linkinIcon,
+    ecobricksLogo2,
+    emptyStar,
 };

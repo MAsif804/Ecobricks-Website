@@ -1,0 +1,136 @@
+/* ProductDetail.css */
+.product-detail-container {
+    width: 100%;
+    margin:auto;
+    font-family: Arial, sans-serif;
+    padding:30px 60px 120px  60px;
+  }
+  .product-main {
+    /* display: flex;
+    gap: 20px; */
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 50px;
+  }
+  .product-images {
+    display: flex;
+    width: 593.422px;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+  }
+  .main-image {
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+  }
+  .thumbnail-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .thumbnail {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    border-radius: 13px;
+    border: 4px solid transparent;
+  }
+  .thumbnail:hover {
+    border-color: #28a745;
+  }
+  .product-info {
+    display: flex;
+    width: 625px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .product-info h1{
+    color: var(--Black, #06121B);
+    font-family: Lato;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    margin: 0;
+  }
+
+  .product-info .product-info-sub{
+    display: flex;
+    align-items: center;
+    gap: 41px;
+  }
+  .price {
+    color: var(--Grey-800, #52616D);
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+  }
+  .rating img {
+    width: 16px;
+  }
+  .color-options {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  .color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .color-1 { background: gold; }
+  .color-2 { background: blue; }
+  .color-3 { background: green; }
+  .color-4 { background: purple; }
+  .quantity-selector {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 15px 0;
+  }
+  .quantity-selector button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+  }
+  .order-button {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  .related-products {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .product-box {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  .product-box img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .product-box button {
+    background: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  

@@ -5,7 +5,7 @@ import {heroImg, nustImg, wordImg, undpImg,whatappsImg, arrowup,  symbolImg} fro
 
 const Header = () => {
   return (
-    <header>
+    <header id='home'>
       <div className="wrapper">
         <Navbar />
         <div className="content-container">
@@ -24,7 +24,7 @@ const Header = () => {
                 <img src={whatappsImg}/>
                 <p>Contact</p>
               </button>
-              <button className='view-btn' onClick={() => window.location.href = "#"}>
+              <button className='view-btn' onClick={() => window.location.href = "#product"}>
                 <p>View Product</p>
                 <img src={arrowup}/>
               </button>

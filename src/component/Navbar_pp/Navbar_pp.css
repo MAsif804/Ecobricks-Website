@@ -1,9 +1,9 @@
-#navbar{
+nav{
     display: flex;
     padding: 8px 72px;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+    border-bottom: 1px solid var(--Grey-100, #E5EAEE);
     width: 100%;
 }
 
@@ -18,10 +18,11 @@ nav .logo-ecobricks img{
     width: 48px;
     height: 48px;
     object-fit: contain;
+    
 }
 
 nav .logo-ecobricks p{
-    color: #F4F4F4;
+    color: #265C00;
     /* color: #fff; */
     font-family: Lato;
     font-size: 24.216px;
@@ -54,7 +55,7 @@ nav .navbar-items .navbar-list{
 }
 
 nav .navbar-items .navbar-list li a{
-    color: var(--White, #FFF);
+    color: var(--Grey-900, #3F4A53);
     font-family: Lato;
     font-size: 16px;
     font-style: normal;

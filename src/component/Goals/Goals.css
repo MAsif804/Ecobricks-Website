@@ -33,10 +33,11 @@
 }
 
 #goals .wrapper .content-container .mean-dev img{
-    width: 240.176px;
-    height: 240.176px;
+    width: 100%;
+    height: auto;
     border-radius: 5.858px;
     background: url(<path-to-image>) lightgray -2.278px -2.278px / 101.897% 102.033% no-repeat;
+    cursor: pointer;
 }
 
 #goals .wrapper .content-container .sub-dev{

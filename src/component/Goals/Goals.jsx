@@ -8,15 +8,29 @@ const Goals = () => {
       <h2 className="main-text">Sustainable Development Goals</h2>
       <div className="content-container">
         <div className="mean-dev">
-          <img src={goodHealth} alt="GoodHealth" />
-          <img src={cleanWater} alt="CleanWater" />
-          <img src={sustianableCite} alt="sustianableCite" />
-          <img src={responsible} alt="Responsible" />
+          <a href="https://sdgs.un.org/goals/goal3">
+            <img src={goodHealth} alt="GoodHealth" />
+          </a>
+          <a href="https://sdgs.un.org/goals/goal6">
+            <img src={cleanWater} alt="CleanWater" />
+          </a>
+          <a href="https://sdgs.un.org/goals/goal11">
+            <img src={sustianableCite} alt="sustianableCite" />
+          </a>
+          <a href="https://sdgs.un.org/goals/goal12">
+            <img src={responsible} alt="Responsible" />
+          </a>
         </div>
         <div className="sub-dev">
+        <a href="https://sdgs.un.org/goals/goal13">
           <img src={cunate} alt="Cunate" />
+        </a>
+        <a href="https://sdgs.un.org/goals/goal14">
           <img src={lifebelow} alt="Lifebelow" />
+        </a>
+        <a href="https://sdgs.un.org/goals/goal15">
           <img src={lifeland} alt="Lifeland" />
+        </a>
         </div>
       </div>
       </div>
