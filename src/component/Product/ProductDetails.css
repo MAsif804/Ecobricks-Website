@@ -221,14 +221,14 @@
     gap: 38px;
   }
 
-.wrapper .content-container{
+.product-detail-container .wrapper .content-container{
     display: flex;
     /* width: 88%;  */ width: 95%;
     justify-content: space-between;
     align-items: center;
 }
 
-.wrapper .content-container h2{
+.product-detail-container .wrapper .content-container h2{
     color: #000;
     font-family: Lato;
     font-size: 40px;
@@ -240,14 +240,14 @@
 }
 
 
-.wrapper .content-container .product-btns{
+.product-detail-container .wrapper .content-container .product-btns{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     gap: 10px;
 }
 
-.wrapper .content-container .product-btns button{
+.product-detail-container .wrapper .content-container .product-btns button{
     display: flex;
     width: 50px;
     height: 50px;
@@ -259,8 +259,7 @@
     cursor: pointer;
     background: none;
 }
-
-.wrapper .content-container .product-btns button:hover{
+.product-detail-container.wrapper .content-container .product-btns button:hover{
     background: var(--Blue-blue-200, #B4BBC6);
     border: none;
 }
@@ -300,7 +299,7 @@
     width: 100%;
     border-radius: 10px;
   }
-   .wrapper .product-box-items{
+.product-detail-container .wrapper .product-box-items{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -308,21 +307,21 @@
     align-self: stretch;
 }
 
-.wrapper   .product-box-items .product-sub-box-items{
+.product-detail-container .wrapper   .product-box-items .product-sub-box-items{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
     align-self: stretch;
 }
- .wrapper  .product-box-items .product-sub-box-items .product-box-main-text{
+.product-detail-container .wrapper  .product-box-items .product-sub-box-items .product-box-main-text{
     display: flex;
     align-items: flex-start;
     align-self: stretch;
     /* gap: 25px; */
 }
 
- .wrapper .product-box-items .product-sub-box-items .product-box-main-text .product-box-main-text-frist{
+.product-detail-container .wrapper .product-box-items .product-sub-box-items .product-box-main-text .product-box-main-text-frist{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -330,7 +329,7 @@
     flex: 1 0 0;
 }
 
-.wrapper .product-box-items .product-sub-box-items .product-box-main-text-frist .main-text{
+.product-detail-container .wrapper .product-box-items .product-sub-box-items .product-box-main-text-frist .main-text{
     color: var(--Black, #06121B);
     font-family: Lato;
     font-size: 18px;
@@ -341,7 +340,7 @@
 }
 
 
-.wrapper .product-box-items .product-sub-box-items .product-box-main-text-frist .sub-text{
+.product-detail-container .wrapper .product-box-items .product-sub-box-items .product-box-main-text-frist .sub-text{
     color: var(--Black, #06121B);
     font-family: Lato;
     font-size: 14px;
@@ -352,7 +351,7 @@
     margin: 0;
     align-self: stretch;
 }
- .wrapper .product-box-items .product-sub-box-items .product-box-main-text .outer-text{
+.product-detail-container .wrapper .product-box-items .product-sub-box-items .product-box-main-text .outer-text{
     color: var(--Gray-700, #344054);
     text-align: right;
     font-family: Lato;
@@ -363,21 +362,21 @@
     margin: 0;
 }
 
-.wrapper .product-box-items .product-sub-box-items .star-group{
+.product-detail-container .wrapper .product-box-items .product-sub-box-items .star-group{
     display: flex;
     align-items: center;
     gap: 5px;
     align-self: stretch;
 }
 
-.wrapper  .product-box-items .product-sub-box-items .star-group .stars{
+.product-detail-container .wrapper  .product-box-items .product-sub-box-items .star-group .stars{
     display: flex;
     /* width: 85.181px; */
     height: 17.036px;
     align-items: flex-start;
     flex-shrink: 0;
 }
-.wrapper .product-box-items .product-sub-box-items .star-group p{
+.product-detail-container .wrapper .product-box-items .product-sub-box-items .star-group p{
     color: var(--Gray-400, #98A2B3);
     font-family: Inter;
     font-size: 14px;
@@ -387,7 +386,7 @@
     margin: 0;
 }
 
- .wrapper .product-box-items  .product-sub-box-btns {
+.product-detail-container .wrapper .product-box-items  .product-sub-box-btns {
     display: flex;
     /* height: 36px; */
     align-items: flex-start;
@@ -396,7 +395,7 @@
    
 }
 
- .wrapper .product-box-items  .product-sub-box-btns button{
+.product-detail-container .wrapper .product-box-items  .product-sub-box-btns button{
     display: flex;
     padding: 8px 14px;
     justify-content: center;
@@ -405,7 +404,7 @@
     flex: 1 0 0;
     cursor: pointer;
 }
-.wrapper .product-box-items  .product-sub-box-btns .frist-btn{
+.product-detail-container .wrapper .product-box-items  .product-sub-box-btns .frist-btn{
     border-radius: 50px;
     border: 1px solid #3A4980;
     background: #417E36;
@@ -414,7 +413,7 @@
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
- .wrapper .product-box-items  .product-sub-box-btns .frist-btn p{
+.product-detail-container .wrapper .product-box-items  .product-sub-box-btns .frist-btn p{
     color: var(--White, #FFF);
     font-family: Lato;
     font-size: 14px;
@@ -424,7 +423,7 @@
     margin: 0;
 }
 
-.wrapper .product-box-items  .product-sub-box-btns .second-btn{
+.product-detail-container .wrapper .product-box-items  .product-sub-box-btns .second-btn{
     border-radius: 50px;
     border: 1px solid var(--Gray-300, #D0D5DD);
     background: var(--White, #FFF);
@@ -432,7 +431,7 @@
     /* Shadow/xs */
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
-.wrapper .product-box-items  .product-sub-box-btns .second-btn p{
+.product-detail-container .wrapper .product-box-items  .product-sub-box-btns .second-btn p{
     color: var(--White, #FFF);
     font-family: Lato;
     font-size: 14px;
