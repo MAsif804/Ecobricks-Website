@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import './ProductDetails.css';
 import { boxsimg1, boxsimg2, boxsimg3, emptyStar, starFull, starhalf,whatappsImg , rightSide, leftSide} from '../../assets/Index';
@@ -6,13 +6,12 @@ import Navbar from "../Navbar_pp/Navbar_pp";
 
 const ProductDetail = () => {
   const { id } = useParams();
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1
-  };
+  
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Example product data (in a real app, fetch from API or state)
   const product = {
     id: 1,
@@ -36,7 +35,8 @@ const ProductDetail = () => {
     { id: 4, name: "EcoPots (New)", price: "900", image: boxsimg3 }, // ✅ Restored missing 4th product
   ];
 
-  const [mainImage, setMainImage] = useState(product.images[0]);
+  const [mainImage, setMainImage] = useState(product.images[id-1]);
+
   const [quantity, setQuantity] = useState(1);
 
   const handleThumbnailClick = (img) => {
