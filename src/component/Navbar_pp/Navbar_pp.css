@@ -5,6 +5,10 @@ nav{
     align-items: center;
     border-bottom: 1px solid var(--Grey-100, #E5EAEE);
     width: 100%;
+    position: fixed;
+    backdrop-filter: blur(20px);
+    z-index: 300;
+    
 }
 
 nav .logo-ecobricks-pp{
@@ -12,12 +16,14 @@ nav .logo-ecobricks-pp{
     align-items: center;
     gap: 10px;
     cursor: pointer;
+
 }
 
 nav .logo-ecobricks-pp img{
     width: 48px;
     height: 48px;
     object-fit: contain;
+
     
 }
 
@@ -31,6 +37,7 @@ nav .logo-ecobricks-pp p{
     text-transform: uppercase;
     line-height: 27.676px; /* 114.286% */
     margin: 0;
+    
 
 }
 

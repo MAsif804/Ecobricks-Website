@@ -11,15 +11,15 @@ const Navbar = () => {
             <div className="navbar-items-pp">
               <ul className='navbar-list-pp'>
                       <li>
-                       <a href="#home">Home</a>
+                       <a href="#">Home</a>
                       </li>
 
                       <li>
-                       <a href="#">Product</a>
+                       <a href="#product">Product</a>
                       </li>
 
                       <li>
-                       <a href="#">Projects</a>
+                       <a href="#project">Projects</a>
                       </li>
 
                       <li>
