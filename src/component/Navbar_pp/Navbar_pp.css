@@ -7,21 +7,21 @@ nav{
     width: 100%;
 }
 
-nav .logo-ecobricks{
+nav .logo-ecobricks-pp{
     display: flex;
     align-items: center;
     gap: 10px;
     cursor: pointer;
 }
 
-nav .logo-ecobricks img{
+nav .logo-ecobricks-pp img{
     width: 48px;
     height: 48px;
     object-fit: contain;
     
 }
 
-nav .logo-ecobricks p{
+nav .logo-ecobricks-pp p{
     color: #265C00;
     /* color: #fff; */
     font-family: Lato;
@@ -34,7 +34,7 @@ nav .logo-ecobricks p{
 
 }
 
-nav .navbar-items{
+nav .navbar-items-pp{
     display: flex;
     width: 710px;
     padding: 8px 8px 8px 24px;
@@ -44,7 +44,7 @@ nav .navbar-items{
 }
 
 
-nav .navbar-items .navbar-list{
+nav .navbar-items-pp .navbar-list-pp{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +54,7 @@ nav .navbar-items .navbar-list{
 
 }
 
-nav .navbar-items .navbar-list li a{
+nav .navbar-items-pp .navbar-list-pp li a{
     color: var(--Grey-900, #3F4A53);
     font-family: Lato;
     font-size: 16px;
@@ -71,7 +71,7 @@ nav .navbar-items .navbar-list li a{
     opacity: 0.9;
 }
 
-nav .navbar-items .navbar-list li a:hover{
+nav .navbar-items-pp .navbar-list-pp li a:hover{
     opacity: 1;
     background: #CFF9D9;
     border-radius: 48px;
@@ -86,7 +86,7 @@ nav .navbar-items .navbar-list li a:hover{
 }
 
 
-nav .navbar-items .contact-btn{
+nav .navbar-items-pp .contact-btn{
     border-radius: 48px;
     display: flex;
     padding: 10px 20px;
@@ -98,7 +98,7 @@ nav .navbar-items .contact-btn{
     cursor: pointer;
 }
 
-nav .navbar-items .contact-btn p{
+nav .navbar-items-pp .contact-btn p{
     color: #FFF;
     font-family: Lato;
     font-size: 14px;
@@ -108,7 +108,7 @@ nav .navbar-items .contact-btn p{
     margin: 0;
 }
 
-nav .navbar-items .contact-btn img{
+nav .navbar-items-pp .contact-btn img{
     width: 20px;
     height: 20px;
 }

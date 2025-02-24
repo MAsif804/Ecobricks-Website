@@ -4,12 +4,12 @@ import {ecobricksLogo2, whatappsImg} from "../../assets/Index";
 const Navbar = () => {
   return (
     <nav id-='navbar_pp'>
-            <div className="logo-ecobricks" onClick={() => window.location.href = "#"} >
+            <div className="logo-ecobricks-pp" onClick={() => window.location.href = "#"} >
               <img src={ecobricksLogo2} alt="" />
               <p>Ecobricks</p>  
             </div>
-            <div className="navbar-items">
-              <ul className='navbar-list'>
+            <div className="navbar-items-pp">
+              <ul className='navbar-list-pp'>
                       <li>
                        <a href="#home">Home</a>
                       </li>

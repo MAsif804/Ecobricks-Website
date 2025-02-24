@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './ProductDetails.css';
-import { boxsimg1, boxsimg2, boxsimg3, emptyStar, starFull, starhalf ,whatappsImg , rightSide, leftSide} from '../../assets/Index';
+import { boxsimg1, boxsimg2, boxsimg3, emptyStar, starFull, starhalf,whatappsImg , rightSide, leftSide} from '../../assets/Index';
 import Navbar from "../Navbar_pp/Navbar_pp";
 
 const ProductDetail = () => {
@@ -121,7 +121,8 @@ const ProductDetail = () => {
               </div>
             </div>
         </div>
-        <div className="wrapper">   
+        <div className="wrapper">
+            
           <div className="content-container">
               <h2>Explore More Products</h2>
               <div className="product-btns">
@@ -134,39 +135,40 @@ const ProductDetail = () => {
               </div>
           </div>
           <div className="related-products">
-            {[boxsimg1, boxsimg2, boxsimg3].map((img, index) => (
+            {[ boxsimg1, boxsimg2, boxsimg3].map((img, index) => (
             <div className="product-box" key={index}>
               <img src={img} alt="Product" />
-              <div className="product-box-items">
-                <div className="product-sub-box-items">
-                               <div className="product-box-main-text">
-                                 <div className="product-box-main-text-frist">
-                                   <p className="main-text">{product.name}</p>
-                                   <p className="sub-text">Multiple Colors Available</p>
-                                 </div>
-                                 <p className="outer-text">Rs. {product.price}</p>
-                               </div>
-                               <div className="star-group">
-                                 <div className="stars">
-                                   <img src={starFull} alt="Star-icon" />
-                                   <img src={starFull} alt="Star-icon" />
-                                   <img src={starFull} alt="Star-icon" />
-                                   <img src={starFull} alt="Star-icon" />
-                                   <img src={starhalf} alt="Star-icon" />
-                                 </div>
-                                 <p>(121)</p>
-                               </div>
+                <div className="product-box-items">
+                                <div className="product-sub-box-items">
+                                  <div className="product-box-main-text">
+                                    <div className="product-box-main-text-frist">
+                                      <p className="main-text">{product.name}</p>
+                                      <p className="sub-text">Multiple Colors Available</p>
+                                    </div>
+                                    <p className="outer-text">Rs. {product.price}</p>
+                                  </div>
+                                  <div className="star-group">
+                                    <div className="stars">
+                                      <img src={starFull} alt="Star-icon" />
+                                      <img src={starFull} alt="Star-icon" />
+                                      <img src={starFull} alt="Star-icon" />
+                                      <img src={starFull} alt="Star-icon" />
+                                      <img src={starhalf} alt="Star-icon" />
+                                    </div>
+                                    <p>(121)</p>
+                                  </div>
+                                </div>
+                                <div className="product-sub-box-btns">
+                                  <button className='frist-btn'>
+                                    <p className="buy-btn">Buy Now</p>
+                                  </button>
+                                  <button className='second-btn'>
+                                    <p className="add-cart">Add Cart</p>
+                                  </button>
+                                </div>
                 </div>
-                <div className="product-sub-box-btns">
-                               <button className='frist-btn'>
-                                 <p className="buy-btn">Buy Now</p>
-                               </button>
-                               <button className='second-btn'>
-                                 <p className="add-cart">Add Cart</p>
-                               </button>
-                </div>
+                <button>Buy Now</button>
               </div>
-            </div>
             ))}
           </div>
         </div>
