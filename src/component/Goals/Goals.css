@@ -47,8 +47,9 @@
 }
 
 #goals .wrapper .content-container .sub-dev img{
-    width: 238.604px;
-    height: 238.604px;
+    width: 100%;
+    height: auto;
     border-radius: 5.503px;
     background: url(<path-to-image>) lightgray -1.965px -2.752px / 101.977% 102.142% no-repeat;
+    cursor: pointer;
 }

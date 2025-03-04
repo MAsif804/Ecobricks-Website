@@ -6,8 +6,6 @@ nav{
     border-bottom: 1px solid var(--Grey-100, #E5EAEE);
     width: 100%;
     position: fixed;
-    backdrop-filter: blur(20px);
-    z-index: 300;
     
 }
 
