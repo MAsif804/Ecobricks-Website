@@ -6,7 +6,8 @@ nav{
     border-bottom: 1px solid var(--Grey-100, #E5EAEE);
     width: 100%;
     position: fixed;
-    background: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+    background: #0F3D23;
 }
 
 nav .logo-ecobricks-pp{
@@ -26,7 +27,7 @@ nav .logo-ecobricks-pp img{
 }
 
 nav .logo-ecobricks-pp p{
-    color: #265C00;
+    color: #f4f4f4;
     /* color: #fff; */
     font-family: Lato;
     font-size: 24.216px;
@@ -46,6 +47,8 @@ nav .navbar-items-pp{
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.90);
 }
 
 
