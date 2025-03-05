@@ -36,73 +36,78 @@ const Testimonials = () => {
             <div className="tesimonials-sub-box">
               <img src={frameIcon} alt="frame-icon" />
               <div className="paragarph">
-                <p>Headspace gives me a</p>
-                <p>slice of the day that’s just</p>
-                <p>for me.</p>
+                <p>It’s a green product so</p>
+                <p>I absolutely love it.</p>
+                <p></p>
               </div>
             </div>
             <div className="sub-title">
-              <p className='blod-text'>Nadien, New Mexico</p>
-              <p className='unblod-text'>on prioritizing self-care</p>
+              <p className='blod-text'>Jane Marriott, CMG OBE</p>
+              <p className='unblod-text'>UK High Commissioner </p>
             </div>
           </div>
           <div className="testimonials-box">
             <div className="tesimonials-sub-box">
               <img src={frameIcon} alt="frame-icon" />
               <div className="paragarph">
-                <p>Your app brings so much</p>
-                <p>peace and tolerance to</p>
-                <p>our home.</p>
+                <p>Sustainable yet beautiful</p>
+                <p>looking product 🌿🪴</p>
+                <p>.</p>
               </div>
             </div>
             <div className="sub-title">
-              <p className='blod-text'>Rachael, UK</p>
-              <p className='unblod-text'>on meditation’s positive effect on family life</p>
+              <p className='blod-text'>Deepa Lama, Program Assistant</p>
+              <p className='unblod-text'>FAO, Nepal</p>
             </div>
           </div>
           <div className="testimonials-box main-box">
             <div className="tesimonials-sub-box">
               <img src={frameIcon} alt="frame-icon" />
               <div className="paragarph">
-                <p>I came to learn that the</p>
-                <p>storyline in my head …</p>
-                <p>was holding me back.</p>
+                <p>I'm loving this EcoPot made from</p>
+                <p>recycled plastic courtesy of</p>
+                <p>Kashaf Akhtar and the team at</p>
+                <p>EcoBricks. Transforming waste</p>
+                <p>into functional art is truly</p>
+                <p>inspiring!</p>
               </div>
             </div>
             <div className="sub-title">
-              <p className='blod-text'>Peter, Belgium</p>
-              <p className='unblod-text'>on what he learned when sitting with himself</p>
+              <p className='blod-text'>Haider Jalal, Automation Engineer</p>
+              <p className='unblod-text'>CodeHuddle</p>
             </div>
           </div>
           <div className="testimonials-box gap-box">
             <div className="tesimonials-sub-box">
               <img src={frameIcon} alt="frame-icon" />
               <div className="paragarph">
-                <p>Headspace provides me</p>
-                <p>with … a connection to</p>
-                <p>myself, and a </p>
-                <p>disconnection from</p>
-                <p>negative thoughts,</p>
-                <p>feelings, and sensations.</p>
+                <p>My worktable just got a</p>
+                <p>green upgrade! 🌿✨</p>
+                <p>These eco-friendly pots</p>
+                <p>from EcoBricks are not just</p>
+                <p>stylish but also super</p>
+                <p> sustainable. ♻️</p>
               </div>
             </div>
             <div className="sub-title">
-              <p className='blod-text'>Keri, UK</p>
-              <p className='unblod-text'>on finding her happy place</p>
+              <p className='blod-text'>Ammara, Marketing Manager</p>
+              <p className='unblod-text'>Agile NextPak Solutions</p>
             </div>
           </div>
-          <div className="testimonials-box">
+          <div className="testimonials-box small-gap">
             <div className="tesimonials-sub-box">
               <img src={frameIcon} alt="frame-icon" />
               <div className="paragarph">
-                <p>Changing my thoughts</p>
-                <p>has allowed me to</p>
-                <p>change my life.</p>
+                <p>A special thanks to Kashaf</p>
+                <p>Akhtar for designing these</p>
+                <p>wonderful giveaways that</p>
+                <p>perfectly align with our</p>
+                <p>values and vision.</p>
               </div>
             </div>
             <div className="sub-title">
-              <p className='blod-text'>Davide, London</p>
-              <p className='unblod-text'>on using meditation to turn his life around</p>
+              <p className='blod-text'>Hina Shahrukh, Managing Partner</p>
+              <p className='unblod-text'>Hina Shahrukh & Co. Pvt Ltd.</p>
             </div>
           </div>
           <div className="testimonials-box">

@@ -6,7 +6,7 @@ nav{
     border-bottom: 1px solid var(--Grey-100, #E5EAEE);
     width: 100%;
     position: fixed;
-    
+    background: none;
 }
 
 nav .logo-ecobricks-pp{

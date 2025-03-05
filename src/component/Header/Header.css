@@ -158,7 +158,7 @@ header .content-container .two-btn .contact-btn img{
 header .content-container .two-btn .view-btn{
     border-radius: 48px;
     border: 1px solid #FFF;
-    background: none;
+    background: #FFF;
     display: flex;
     padding: 10px 20px;
     /* flex-direction: column; */
@@ -168,7 +168,7 @@ header .content-container .two-btn .view-btn{
 }
 
 header .content-container .two-btn .view-btn p{
-    color: #FFF;
+    color: var(--Green-300, #108125);
     font-family: Lato;
     font-size: 14px;
     font-style: normal;

@@ -6,15 +6,19 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: "What are the prices of the bricks?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      question: "Can we get customized designs for EcoPots and EcoTiles?",
+      answer: "Yes, you can. But we require minimum order of 5,000 sqft for EcoTiles and 500 Pieces for EcoPots."
     },
     {
-      question: "What is your favorite template from Brick?",
+      question: "Is it waterproof?",
+      answer: "Yes, our recycled plastic materials maintain their waterproof properties, making them suitable for various applications, including outdoor and indoor use."
+    },
+    {
+      question: "Where is Ecobricks located and does Ecobricks serve clients globally?",
       answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
     },
     {
-      question: "How do you clone a the bricks from the Showcase?",
+      question: "Will it gets ruined in sun exposure?",
       answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
     }
   ];

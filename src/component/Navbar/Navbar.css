@@ -1,4 +1,4 @@
-#navbar{
+nav {
     display: flex;
     padding: 8px 72px;
     justify-content: space-between;
@@ -6,7 +6,8 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.30);
     width: 100%;
     position: fixed;
-    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+    background: #0F3D23;
 }
 
 nav .logo-ecobricks{
@@ -74,6 +75,7 @@ nav .navbar-items .navbar-list li a{
 
 nav .navbar-items .navbar-list li a:hover{
     opacity: 1;
+
     font-family: Lato;
     font-size: 16px;
     font-style: normal;

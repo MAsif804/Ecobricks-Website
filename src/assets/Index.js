@@ -42,6 +42,7 @@ import instagramIcon from "./instagram-icon.svg";
 import linkinIcon from "./link-in-icon.svg";
 import ecobricksLogo2 from "./ecobricks-logo-2.png";
 import emptyStar from "./empty-star.svg";
+import blogImgs from "./blog-img.png";
 
 
 
@@ -97,4 +98,5 @@ export {
     linkinIcon,
     ecobricksLogo2,
     emptyStar,
+    blogImgs,
 };

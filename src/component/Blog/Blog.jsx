@@ -1,30 +1,19 @@
 import React from 'react'
 import './Blog.css';
-import {queryStats, homeWorking, emojiObects} from "../../assets/Index";
+import {queryStats, homeWorking, emojiObects,blogImgs} from "../../assets/Index";
 const Blog = () => {
   return (
   <section id="blog">
     <div  className="wrapper">
-        <div className="blog-page">
-          <div className="content-container">
-            <div className="blogs-items">
-              <img src={queryStats} alt="Pastic Waste" />
-              <p className="main-text">2 kg/sq</p>
-              <p className="small-text">Plastic Waste Reduction</p>
-            </div>
-            <div className="blogs-items">
-              <img src={homeWorking} alt="Pastic Waste" />
-              <p className="main-text">20%</p>
-              <p className="small-text">Reduction in air Pollution</p>
-            </div>
-            <div className="blogs-items">
-              <img src={emojiObects} alt="Pastic Waste" />
-              <p className="main-text">98%</p>
-              <p className="small-text">Water Conservation</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div className="blog-main-text">
+        <p className='blog-main-heading'>From Waste to Sustainability:</p>
+        <p className='blog-sub-heading'> Converting Non-recyclable Plastic into Eco Friendly Building Materials</p>
+      </div> 
+      <p className="blog-paragraph">
+       We are Targeting >90% of global plastic waste that is not being recycled. Our technology that cures low-value waste    into a eco-friendly product that is alternative to concrete products such as paving tiles, recycled containers, planters, etc.
+      </p>
+      <img src={blogImgs} className="blog-img" alt="blog-img" />
+    </div>
   </section>
   )
 }

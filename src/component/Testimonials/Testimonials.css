@@ -65,13 +65,13 @@
     align-items: flex-start;
     gap: 21.599px;
     align-self: stretch;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 #testimonials .wrapper .testimonials-items .testimonials-box{
     display: flex;
-    width: 24%;
-    /* height: 383.4px; */
+    width: 30%;
+    height: 383.4px;
     padding: 25.199px 28.799px 25.201px 28.801px;
     flex-direction: column;
     justify-content: center;
@@ -84,11 +84,14 @@
 
 #testimonials .wrapper .testimonials-items .main-box{
    opacity: 1;
+   gap:28.4px;
 }
 
 #testimonials .wrapper .testimonials-items .gap-box{
    gap:28.4px;
 }
+
+
 
 #testimonials .wrapper .testimonials-items .testimonials-box .tesimonials-sub-box{
     display: flex;
@@ -110,10 +113,10 @@
 
 #testimonials .wrapper .testimonials-items .testimonials-box .tesimonials-sub-box .paragarph p {
     display: flex;
-    width: 254.709px;
-    height: 30.6px;
+    width:150%;
+    /* padding: 0px 211.5px 104.4px 0px; */
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     flex-shrink: 0;
     color: #413D45;
     font-family: Lato;
