@@ -53,9 +53,7 @@ const Product = () => {
                   <button className='frist-btn'>
                     <p className="buy-btn">Buy Now</p>
                   </button>
-                  <button className='second-btn'>
-                    <p className="add-cart">Add Cart</p>
-                  </button>
+                  
                 </div>
               </div>
             </Link>

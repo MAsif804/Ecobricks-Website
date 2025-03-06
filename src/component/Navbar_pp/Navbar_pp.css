@@ -8,6 +8,7 @@ nav{
     position: fixed;
     border-bottom: 1px solid rgba(255, 255, 255, 0.30);
     background: #0F3D23;
+    z-index: 300;
 }
 
 nav .logo-ecobricks-pp{

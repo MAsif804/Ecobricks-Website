@@ -43,7 +43,9 @@ import linkinIcon from "./link-in-icon.svg";
 import ecobricksLogo2 from "./ecobricks-logo-2.png";
 import emptyStar from "./empty-star.svg";
 import blogImgs from "./blog-img.png";
-
+import plasticWaste from "./plastic-waste.png";
+import carbonWaste from "./carbon-waste.png";
+import waterWaste from "./water-waste.png";
 
 
 
@@ -99,4 +101,7 @@ export {
     ecobricksLogo2,
     emptyStar,
     blogImgs,
+    plasticWaste,
+    carbonWaste,
+    waterWaste,
 };

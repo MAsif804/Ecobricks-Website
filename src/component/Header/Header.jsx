@@ -18,7 +18,7 @@ const Header = () => {
                 <a href="#" className='Inclusive-btn'> &#x1F49F; Inclusive</a>
               </div>
             </div>
-              <p className='hero-para'>Innovative concrete alternative for a carbon-negative future. Crafting premium building products from non-recycled plastics. Building the sustainable framework for tomorrow's cities.</p>
+              <p className='hero-para'>Crafting premium building materials from non-recycled plastics.  Building the sustainable framework for tomorrow's cities. Innovative concrete alternative for a carbon-negative future. </p>
               <div className="two-btn">
                 <button className='contact-btn' onClick={() => window.location.href = "#"}>
                 <img src={whatappsImg}/>
