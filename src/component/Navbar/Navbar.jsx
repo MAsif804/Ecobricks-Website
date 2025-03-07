@@ -23,7 +23,7 @@ const Navbar = () => {
                       </li>
 
                       <li>
-                        <a href="#">About Us</a>
+                        <a href="#info">About Us</a>
                       </li>
               </ul>
               <button className='contact-btn' onClick={() => window.location.href = "#"}>

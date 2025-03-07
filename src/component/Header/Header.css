@@ -1,10 +1,11 @@
 
 header{
     min-height: 100vh;
-    background:url("../../assets/hero-img.png");
+    background:linear-gradient(0deg, rgba(8, 20, 6, 0.80) 0%, rgba(8, 20, 6, 0.80) 100%),url("../../assets/hero-img.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    /* background: linear-gradient(0deg, rgba(8, 20, 6, 0.80) 0%, rgba(8, 20, 6, 0.80) 100%), url("../../assets/hero-img.gif") lightgray 0px -620px / 100% 237.918% no-repeat; */
 
 }
 

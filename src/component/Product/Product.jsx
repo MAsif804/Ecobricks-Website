@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Product.css';
-import { boxsimg3, starFull, starhalf, boxsimg1, boxsimg2, rightSide, leftSide } from "../../assets/Index";
+import { boxsimg3, starFull, starhalf, boxsimg1, boxsimg2, boxImg4,rightSide, leftSide } from "../../assets/Index";
 
 const productList = [
   { id: 1, name: "Wall Cladding - 8x4 inch", price: "200/sqft", image: boxsimg1 },
@@ -15,7 +15,7 @@ const Product = () => {
     <section id='product'>
       <div className="wrapper">
         <div className="content-container">
-          <h2>Products</h2>
+          <h2>Featured Products</h2>
           <div className="product-btns">
             <button>
               <img src={leftSide} alt="left-btn" />

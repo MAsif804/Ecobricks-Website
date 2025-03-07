@@ -86,15 +86,15 @@
 #goals .wrapper .content-container{
     display: flex;
     width: 100%;
-    height: 150px;
+    /* height: 150px; */
     align-items: center;
     gap: 23.432px;
     flex-shrink: 0;
     /* display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 23.432px 23.432px; */
-    padding-left: 262px;
-    padding-right: 142px;
+    padding-left: 213px;
+    padding-right: 89px;
 }
 #goals .wrapper .content-container .golobal-img{
     width: 100%;

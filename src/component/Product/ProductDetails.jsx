@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import './ProductDetails.css';
-import { boxsimg1, boxsimg2, boxsimg3, emptyStar, starFull, starhalf,whatappsImg , rightSide, leftSide} from '../../assets/Index';
+import { boxsimg1, boxsimg2, boxsimg3,boxImg4 ,emptyStar, starFull, starhalf,whatappsImg , rightSide, leftSide} from '../../assets/Index';
 import Navbar from "../Navbar_pp/Navbar_pp";
 
 const ProductDetail = () => {
@@ -142,7 +142,7 @@ const ProductDetail = () => {
               </div>
           </div>
           <div className="related-products">
-            {[boxsimg1, boxsimg2, boxsimg3].map((img, index) => (
+            {[boxsimg1, boxsimg3, boxImg4].map((img, index) => (
             <div className="product-box" key={index}>
               <img src={img} alt="Product" />
                 <div className="product-box-items">

@@ -32,20 +32,20 @@ const Footer = () => {
             <button className='icons' onClick={() => window.location.href = "#"}>
                  <img src={youtubeIcon}/>           
             </button>
-            <button className='icons' onClick={() => window.location.href = "#"}>
+            <button className='icons' onClick={() => window.location.href = "https://www.linkedin.com/company/ecobricks1/"}>
                <img src={linkedinIcon}/>           
             </button>
-            <button className='icons' onClick={() => window.location.href = "#"}>
+            <button className='icons' onClick={() => window.location.href = "https://www.linkedin.com/company/ecobricks1/"}>
                <img src={linkedinIcon}/>           
             </button>
             </div>
             <div className="quick-links">
               <h6>Quick Links</h6>
               <div className="quick-links-items">
-                <p onClick={() => window.location.href = "#"}>About </p>
+                <p onClick={() => window.location.href = "#info"}>About </p>
                 <p onClick={() => window.location.href = "#"}>Why Us?</p>
-                <p onClick={() => window.location.href = "#"}>Products</p>
-                <p onClick={() => window.location.href = "#"}>Project</p>
+                <p onClick={() => window.location.href = "#product"}>Products</p>
+                <p onClick={() => window.location.href = "#project"}>Project</p>
               </div>
             </div>
           </div>

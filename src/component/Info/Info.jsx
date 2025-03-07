@@ -49,13 +49,13 @@ const Info = () => {
           </div>
           <hr />
           <div className="info-social-icon">
-            <button className='icons' onClick={() => window.location.href = "#"}>
+            <button className='icons' onClick={() => window.location.href = "https://www.facebook.com/ecobricks.pk/"}>
               <img src={facebookIcon} alt='facebook-icon'/>           
             </button>
-            <button className='icons' onClick={() => window.location.href = "#"}>
+            <button className='icons' onClick={() => window.location.href = "https://www.instagram.com/ecobricks.pk/"}>
               <img src={instagramIcon} alt='instagram-icon'/>           
             </button>
-            <button className='icons' onClick={() => window.location.href = "#"}>
+            <button className='icons' onClick={() => window.location.href = "https://www.linkedin.com/company/ecobricks1/"}>
                <img src={linkinIcon} alt='linkin-icon'/>           
             </button>
           </div>

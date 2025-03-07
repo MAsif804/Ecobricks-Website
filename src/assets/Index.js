@@ -1,5 +1,5 @@
 import ecobricksLogo from './ecobricks-logo.png';
-import heroImg from "./hero-img.png";
+import heroImg from "./hero-img.gif";
 import nustImg from "./nust-img.png";
 import wordImg from "./word-img.png";
 import undpImg from "./undp-img.png";
@@ -46,6 +46,7 @@ import blogImgs from "./blog-img.png";
 import plasticWaste from "./plastic-waste.png";
 import carbonWaste from "./carbon-waste.png";
 import waterWaste from "./water-waste.png";
+import boxImg4 from "./box-4.png";
 
 
 
@@ -104,4 +105,5 @@ export {
     plasticWaste,
     carbonWaste,
     waterWaste,
+    boxImg4,
 };
