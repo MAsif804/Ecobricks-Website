@@ -1,15 +1,16 @@
-#project .wrapper {
+#project.white {
+  background-color: #FBFDF9;
+}#project .wrapper {
   display: flex;
-  /* width: 1739.333px; */
   padding: 120px 0px 120px 80px;
   flex-direction: column;
   align-items: flex-start;
   gap: 38px;
+  background-color: #FBFDF9; /* Light background for entire section */
 }
 
 #project .wrapper .content-container {
   display: flex;
-  /* width: 88%;  */
   width: 95%;
   justify-content: space-between;
   align-items: center;
@@ -33,164 +34,203 @@
 }
 
 #project .wrapper .content-container .project-btns button {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    padding: 14.583px 14.58px 14.584px 14.587px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1125px;
-    border: 1.042px solid var(--Blue-blue-200, #b4bbc6);
-    cursor: pointer;
-    background: none;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--Blue-blue-200, #b4bbc6);
+  cursor: pointer;
+  background: #FFF;
 }
 
 #project .wrapper .content-container .project-btns button:hover {
   background: var(--Blue-blue-200, #b4bbc6);
-  border: none;
 }
 
-#project .wrapper .project-items {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  align-self: stretch;
-  width: 155rem;
-  overflow-x: auto;
+/* Slider container styling */
+#project .project-slider-container {
+  width: 95%;
+  margin-right: 20px;
+  padding: 10px 0;
 }
 
-#project .wrapper .project-items .project-box {
-  display: flex;
-  width: 29%;
-  padding: 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  border-radius: 32px;
-  background: #edf5ee;
-}
-
-#project .wrapper .project-items .project-box .box-img {
+#project .project-slider {
   width: 100%;
-  height: 98%;
-  object-fit: cover;
-  border-radius: 32px;
+  margin-left: -5px;
 }
 
-#project .wrapper .project-items .project-box .sub-project-box {
+#project .project-box {
+  width: 95% !important;
   display: flex;
-  padding-bottom: 4px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 14px;
+  gap: 0;
+  border-radius: 16px;
+  background: #F3F9F4; /* Lighter mint/sage green background */
+  overflow: hidden;
+  margin: 0 15px;
+  padding: 20px;
+  width: calc(33.33% - 30px);
+  transition: all 0.3s ease;
+  border: 1px solid #E5F0E7; /* Light border color */
+}
+
+#project .image-container {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background-color: #F3F9F4;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+#project .project-box .image-container {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background-color: #F3F9F4;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+#project .project-box .box-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#project .project-box .sub-project-box {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
   align-self: stretch;
 }
 
-#project .wrapper .project-items .project-box .sub-project-box .main-text {
+#project .project-box .sub-project-box .main-text {
   color: var(--Black, #06121b);
   font-family: Lato;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 160%; /* 28.8px */
+  line-height: 160%;
   margin: 0;
 }
 
-
-#project .wrapper .project-items .project-box .sub-project-box .sub-text {
-    
-        overflow: hidden;
-        color: var(--Black, #06121B);
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3; /* Limit to 3 lines */
-        -webkit-box-orient: vertical;
-        font-family: Lato;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px; /* 142.857% */
-        margin: 0;
-        opacity: 0.7;
-        text-decoration-line: underline;
-        text-decoration-style: solid;
-        text-decoration-skip-ink: none;
-        text-decoration-thickness: auto;
-        text-underline-offset: auto;
-        text-underline-position: from-font;
-
-
-       
+#project .project-box .sub-project-box .sub-text {
+  overflow: hidden;
+  color: var(--Black, #06121B);
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  opacity: 0.7;
 }
 
-#project .wrapper .project-items .project-box .sub-project-box .sub-btns {
+#project .project-box .sub-project-box .sub-text-expanded {
+  color: var(--Black, #06121B);
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  opacity: 0.7;
+  /* No height limit for expanded text */
+}
+
+#project .project-box .sub-project-box .sub-btns {
   display: flex;
-  /* flex-direction: column; */
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
   gap: 10px;
   align-self: stretch;
+  margin-top: 8px;
 }
 
-#project .wrapper .project-items .project-box .sub-project-box .sub-btns button {
-    display: flex;
-    padding: 8px 14px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
+#project .project-box .sub-project-box .sub-btns button {
+  display: flex;
+  padding: 8px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
 }
 
-#project .wrapper .project-items .project-box .sub-project-box .sub-btns .view-btn {
-    border-radius: 50px;
-    background: #417E36;
-    border: none;
-    
-    /* Shadow/xs */
-    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+#project .project-box .sub-project-box .sub-btns .view-btn {
+  border-radius: 50px;
+  background: #417E36;
+  border: none;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  min-width: 110px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
 }
 
-#project .wrapper .project-items .project-box .sub-project-box .sub-btns .view-btn p {
-    color: var(--White, #FFF);
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px; /* 142.857% */
-    margin: 0;
+#project .project-box .sub-project-box .sub-btns .view-btn img {
+  margin-left: 6px;
 }
 
-#project .wrapper .project-items .project-box .sub-project-box .sub-btns .view-btn:hover {
-    background: #3A4980;
+#project .project-box .sub-project-box .sub-btns .view-btn p {
+  color: var(--White, #FFF);
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
 }
 
-#project .wrapper .project-items .project-box .sub-project-box .sub-btns .view-btn img {
-    display: flex;
-    width: 15px;
-    height: 15px;
-    justify-content: center;
-    align-items: center;
+#project .project-box .sub-project-box .sub-btns .view-btn:hover {
+  background: #3A4980;
 }
 
-#project .wrapper .project-items .project-box .sub-project-box .sub-btns .detials-btn {
-    border-radius: 50px;
-    background: #417E36;
-    border: none;
-    display: none;
-    /* Shadow/xs */
-    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+#project .project-box .sub-project-box .sub-btns .view-btn img {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
-#project .wrapper .project-items .project-box .sub-project-box .sub-btns .detials-btn p {
-    color: var(--White, #FFF);
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px; /* 142.857% */
-    margin: 0;
+/* Responsive styles */
+@media (max-width: 1200px) {
+  #project .wrapper {
+    padding: 80px 40px;
+  }
+  
+  #project .project-slider-container,
+  #project .wrapper .content-container {
+    width: 100%;
+  }
 }
 
-
-
-
+@media (max-width: 768px) {
+  #project .wrapper {
+    padding: 60px 20px;
+  }
+  
+  #project .wrapper .content-container h2 {
+    font-size: 32px;
+  }
+  
+  #project .project-box {
+    margin: 0 5px;
+  }
+}
