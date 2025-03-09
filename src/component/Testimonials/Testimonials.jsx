@@ -143,28 +143,50 @@ import "slick-carousel/slick/slick-theme.css";
 const testimonialsList = [
   {
     id: 1,
-    quote: "Sustainable yet beautiful looking product 🌿🪴",
+    quote: "The stress and loneliness courses … taught me how to comfort myself.",
+    author: "Alicia, Canada",
+    organization: "on managing the trauma of sexual assault",
+  },
+  {
+    id: 2,
+    quote: "It’s a green product so I absolutely love it.",
+    author: " Jane Marriott, CMG OBE",
+    organization: "UK High Commissioner"
+  },
+  
+  {
+    id: 3,
+    quote: "Sustainable yet beautiful looking product 🌿",
     author: "Deepa Lama, Program Assistant",
     organization: "FAO, Nepal"
   },
   {
-    id: 2,
+    id: 4,
     quote: "I'm loving this EcoPot made from recycled plastic courtesy of Kashaf Akhtar and the team at EcoBricks. Transforming waste into functional art is truly inspiring!",
     author: "Haider Jalal, Automation Engineer",
     organization: "CodeHuddle"
   },
   {
-    id: 3,
+    id: 5,
     quote: "My worktable just got a green upgrade! 🌿✨ These eco-friendly pots from EcoBricks are not just stylish but also super sustainable. ♻️",
     author: "Ammara, Marketing Manager",
     organization: "Agile NextPak Solutions"
   },
   {
-    id: 4,
+    id: 6,
     quote: "A special thanks to Kashaf Akhtar for designing these wonderful giveaways that perfectly align with our values and vision.",
     author: "Hina Shahrukh, Managing Partner",
     organization: "Hina Shahrukh & Co. Pvt Ltd."
-  }
+  },
+ 
+ 
+  {
+    id: 7,
+    quote: "A happy workforce leads to a happy work environment.",
+    author: "Jaime, Spain",
+    organization: "on the benefits of his employees embracing meditation"
+  },
+
 ];
 
 const Testimonials = () => {

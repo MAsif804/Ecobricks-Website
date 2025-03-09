@@ -26,7 +26,7 @@ const Navbar = () => {
                         <a href="#info">About Us</a>
                       </li>
               </ul>
-              <button className='contact-btn' onClick={() => window.location.href = "#"}>
+              <button className='contact-btn' onClick={() => window.location.href = "https://web.whatsapp.com/"}>
                 <img src={whatappsImg}/>
                 <p>Contact</p>
               </button>

@@ -42,12 +42,14 @@
     width: 20%;
 }
 #goals .wrapper .waste-material .waste-img{
-    width: 80%;
+    width: 56%;
     height: auto;
+    opacity: 0.8;
 }
 .water-img{
-    width: 96%;
+    width: 67%;
     height: auto;
+    opacity: 0.8;
 }
 #goals .wrapper .waste-material .ton-text{
     color: #F3C52A;
@@ -58,6 +60,7 @@
     line-height: normal;
     margin: 0;
     width: 300px;
+    /* opacity: 0.8; */
 }
 
 #goals .wrapper .waste-material .about-text{
@@ -68,8 +71,8 @@
     font-weight: 800;
     line-height: normal; /* 57.143% */
     margin: 0;
-    width: 400px;
-    /* opacity: 0.8; */
+    width: 334px;
+    opacity: 0.8;
 }
 
 #goals .wrapper .goal-sub-text{
@@ -93,11 +96,11 @@
     /* display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 23.432px 23.432px; */
-    padding-left: 213px;
+    padding-left: 261px;
     padding-right: 89px;
 }
 #goals .wrapper .content-container .golobal-img{
-    width: 100%;
+    width: 150px;
     height: auto;
 }
 

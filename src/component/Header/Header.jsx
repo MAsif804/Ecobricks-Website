@@ -20,7 +20,7 @@ const Header = () => {
             </div>
               <p className='hero-para'>Crafting premium building materials from non-recycled plastics.  Building the sustainable framework for tomorrow's cities. Innovative concrete alternative for a carbon-negative future. </p>
               <div className="two-btn">
-                <button className='contact-btn' onClick={() => window.location.href = "#"}>
+                <button className='contact-btn' onClick={() => window.location.href = "https://web.whatsapp.com/"}>
                 <img src={whatappsImg}/>
                 <p>Contact</p>
               </button>

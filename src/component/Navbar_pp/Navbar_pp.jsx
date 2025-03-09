@@ -2,31 +2,35 @@ import React from 'react'
 import './Navbar_pp.css';
 import {ecobricksLogo, whatappsImg} from "../../assets/Index";
 const Navbar = () => {
+
+
+
   return (
     <nav id-='navbar_pp'>
-            <div className="logo-ecobricks-pp" onClick={() => window.location.href = "#"} >
+            <div className="logo-ecobricks-pp" onClick={() => window.location.href = "/"} >
               <img src={ecobricksLogo} alt="" />
               <p>Ecobricks</p>  
             </div>
             <div className="navbar-items-pp">
               <ul className='navbar-list-pp'>
                       <li>
-                       <a href="#">Home</a>
+                       <a href="/">Home</a>
                       </li>
 
                       <li>
-                       <a href="#product">Product</a>
+                       <a href="/#product">Product</a>
+                       
                       </li>
 
                       <li>
-                       <a href="#project">Projects</a>
+                       <a href="/">Projects</a>
                       </li>
 
                       <li>
-                        <a href="#">About Us</a>
+                        <a href="/">About Us</a>
                       </li>
               </ul>
-              <button className='contact-btn' onClick={() => window.location.href = "#"}>
+              <button className='contact-btn' onClick={() => window.location.href = "https://web.whatsapp.com/"}>
                 <img src={whatappsImg}/>
                 <p>Contact</p>
               </button>
