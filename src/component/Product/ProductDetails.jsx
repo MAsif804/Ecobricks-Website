@@ -1,10 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './ProductDetails.css';
-import { boxsimg1, boxsimg2, boxsimg3,boxImg4 ,emptyStar, starFull, starhalf,whatappsImg , rightSide, leftSide} from '../../assets/Index';
-import Navbar from "../Navbar_pp/Navbar_pp";
+import { 
+  boxsimg1, boxsimg2, boxsimg3, boxImg4,
+   whatappsImg,
+  rightSide, leftSide, leftSide1,rightSide1,plImg1,plImg2,plImg3,plImg4,xlImg1,xlImg2,xlImg3,xlImg4,xlImg5,tlImg1,tlImg2,tlImg3,tlImg4,tlImg5,tlImg,
+} from '../../assets/Index';
+import Navbar_pp from "../Navbar_pp/Navbar_pp";
 
-const ProductDetail = () => {
+const ProductDetails = () => {
   const { id } = useParams();
   
   // Scroll to top when component mounts
@@ -12,32 +19,87 @@ const ProductDetail = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Example product data (in a real app, fetch from API or state)
-  const product = {
-    id: 1,
-    name: "Wall Cladding - 8x4 inch",
-    price: "Rs. 200/sqft",
-    rating: 4.8,
-    reviews: 67,
-    description: [
-      "Cost Efficiency: Save on maintenance and installation costs with their easy-to-handle design.",
-      "Weatherproof Protection: Built to withstand all weather conditions, ensuring long-lasting performance.",
-      "Thermal Insulation: Enhance energy efficiency with superior thermal insulation, keeping interiors comfortable year-round.",
-      "Weatherproof: Built to withstand all weather conditions.",
-      "Perfect for Wall Cladding: Ideal for residential and commercial applications, adding aesthetic appeal and functionality to any structure.",
-    ],
-    images: [boxsimg1, boxsimg2, boxsimg3],
+  // Product database with expanded information
+  const allProducts = [
+    {
+      id: 1,
+      name: "EcoTiles (S) - 8 x 4 inch",
+      price: "190/sqft",
+      rating: 4.8,
+      reviews: 67,
+      subtitle: "Sustainable, Stylish, and Built to Last",
+      description: [
+        "Cost Efficiency: Low maintenance & easy installation ",
+        "Weatherproof Protection:  Resists harsh conditions for long-lasting performance",
+        "Thermal Insulation: Enhances energy efficiency year-round",
+      ],
+      images: [boxsimg1,tlImg1, tlImg2, tlImg3, tlImg4, tlImg5],  
+    },
+    {
+      id: 2,
+      name: "EcoTiles (L) - 12 X 6 Inch",
+      price: "200/sqft",
+      rating: 4.7,
+      reviews: 121,
+      subtitle: "Large Format, Maximum Impact",
+      description: [
+        "Cost Efficiency: Low maintenance & easy installation ",
+        "Weatherproof Protection:  Resists harsh conditions for long-lasting performance",
+        "Thermal Insulation: Enhances energy efficiency year-round",
+      ],
+      images: [boxsimg2,tlImg,tlImg1, tlImg2, tlImg3, tlImg4, tlImg5],
+    },
+    {
+      id: 3,
+      name: "EcoPots (L)",
+      price: "900",
+      rating: 4.9,
+      reviews: 121,
+      subtitle: "Sustainable Gardening Made Stylish",
+      description: [
+        "Eco-friendly: Made from 100% recycled plastic waste.",
+        "Durable Design: Resistant to cracks, fading, and weather damage.",
+        "Lightweight: Easy to move and reposition as needed.",
+       
+      ],
+      images: [plImg4,plImg3, plImg2, plImg1],
+    },
+    {
+      id: 4,
+      name: "EcoPots (XL)",
+      price: "700",
+      rating: 4.6,
+      reviews: 121,
+      subtitle: "Small Pots, Big Impact",
+      description: [
+        "Eco-friendly: Made from 100% recycled plastic waste.",
+        "Durable Design: Resistant to cracks, fading, and weather damage.",
+        "Lightweight: Easy to move and reposition as needed.",
+        
+      ],
+      images: [boxsimg3, xlImg1, xlImg2, xlImg3, xlImg4, xlImg5],
+    }
+ ];
+
+  // Find the correct product based on id parameter
+  const currentId = parseInt(id);
+  const product = allProducts.find(p => p.id === currentId) || allProducts[0];
+  
+  // Get related products (excluding current product)
+  const relatedProducts = allProducts.filter(p => p.id !== currentId).slice(0, 3);
+  
+  // Ensure proper link handling for related products
+  const handleProductClick = (productId, e) => {
+    // Update URL without full page refresh
+    window.history.pushState({}, '', `/products/${productId}`);
+    // Force component to re-render with new product
+    window.location.reload();
   };
-  const productList = [
-    { id: 1, name: "Wall Cladding - 8x4 inch", price: "200/sqft", image: boxsimg1 },
-    { id: 2, name: "Wall Cladding - 12x6 inch", price: "200/sqft", image: boxsimg2 },
-    { id: 3, name: "EcoPots", price: "900", image: boxsimg3 },
-    { id: 4, name: "EcoPots (New)", price: "900", image: boxsimg3 }, // ✅ Restored missing 4th product
-  ];
 
-  const [mainImage, setMainImage] = useState(product.images[id-1]);
-
+  const [mainImage, setMainImage] = useState(product.images[0]);
   const [quantity, setQuantity] = useState(1);
+  const [selectedColor, setSelectedColor] = useState(0);
+  const [hoveredColor, setHoveredColor] = useState(null);
 
   const handleThumbnailClick = (img) => {
     setMainImage(img);
@@ -49,138 +111,225 @@ const ProductDetail = () => {
 
   const handleOrder = () => {
     alert(`Order placed for ${quantity} item(s) of ${product.name}`);
+    const message = `Hello, I'd like to place an order for:
+    - Product: ${product.name}
+    - Price: Rs. ${product.price}
+    - Quantity: ${quantity}
+    - Color: ${colorOptions[selectedColor].name}
+    
+    Please provide more information about availability and delivery options.`;
+        
+        // Encode the message for WhatsApp URL
+        const encodedMessage = encodeURIComponent(message);
+        
+        // You can replace this with your actual business phone number
+        const phoneNumber = "923064157551"; // Format: country code + number (no + or spaces)
+        
+        // Create WhatsApp URL
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        
+        // Open WhatsApp in a new tab
+        window.open(whatsappUrl, '_blank');
+
+  };
+  
+  const handleColorSelect = (index) => {
+    setSelectedColor(index);
+  };
+
+  // Color options with names - order aligned with design
+  const colorOptions = [
+    { color: "#8D5E1E", name: "Brown" },
+    { color: "#000000", name: "Black" },
+    { color: "#C12126", name: "Red" },
+    { color: "#667085", name: "Gray" },
+    { color: "#F2D5B2", name: "Beige" },
+    { color: "#0D9488", name: "Teal" }
+  ];
+
+  // Slick settings for image carousel
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: <button className="custom-slick-prev"><img src={leftSide1} alt="Previous" /></button>,
+    nextArrow: <button className="custom-slick-next"><img src={rightSide1} alt="Next" /></button>,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
   };
 
   return (
     <>
-    <Navbar />
-        <div className="product-detail-container">
+      <Navbar_pp />
+      <div className="product-detail-container">
         <div className="product-main">
-            <div className="product-images">
+          {/* Product Images */}
+          <div className="product-images">
             <img src={mainImage} alt="Product" className="main-image" />
-            <div className="thumbnail-container">
+            <div className="image-slider-container">
+              <Slider {...sliderSettings}>
                 {product.images.map((img, index) => (
-                <img key={index} src={img} alt="Thumbnail" className="thumbnail" onClick={() => handleThumbnailClick(img)} />
-                ))}
-            </div>
-            </div>
-            <div className="product-info">
-              <div className="product-box-1">
-                <h1>{product.name}</h1>
-                <div className="product-info-sub">
-                  <p className="price">{product.price}</p>
-                  <div className="rating">
-                    {[...Array(1)].map((_, i) => <img key={i}  src={emptyStar} alt="Star" />)}
-                    <span>{product.rating} ({product.reviews} Reviews)</span>
+                  <div key={index} className="slider-item">
+                    <img 
+                      src={img} 
+                      alt={`${product.name} view ${index + 1}`} 
+                      className="thumbnail" 
+                      onClick={() => handleThumbnailClick(img)} 
+                    />
                   </div>
-              </div>
-              </div>
-              <div className="product-box-2">
-                <h3 className='select-text'>Choose a Color</h3>
-                <div className="color-options">
-                    <svg className='color-box' xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
-                      <rect x="7.42236" y="7" width="50" height="50" rx="25" fill="#8D5E1E"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M43.6759 22.2527C44.2267 22.6689 44.3359 23.4528 43.9197 24.0036L31.1697 40.8786C30.9599 41.1563 30.6439 41.3339 30.2976 41.3688C29.9514 41.4037 29.6063 41.2926 29.3454 41.0624L20.8454 33.5624C20.3277 33.1056 20.2783 32.3157 20.7351 31.798C21.1918 31.2804 21.9818 31.231 22.4994 31.6878L29.9881 38.2954L41.925 22.4965C42.3412 21.9457 43.1251 21.8366 43.6759 22.2527Z" fill="white"/>
-                      <rect x="1.92236" y="1.5" width="61" height="61" rx="30.5" stroke="#8D5E1E" stroke-width="3"/>
-                    </svg>
-                    <svg className='color-box' xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
-                      <rect x="7.42236" y="7" width="50" height="50" rx="25" fill="#A8CC41"/>
-                    </svg>
-                    <svg className='color-box' xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
-                      <rect x="7.42236" y="7" width="50" height="50" rx="25" fill="#838EEF"/>
-                    </svg>
-                    <svg className='color-box' xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
-                      <rect x="7.42236" y="7" width="50" height="50" rx="25" fill="#DF4BC7"/>
-                    </svg>
-                    <svg className='color-box' xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
-                      <rect x="7.42236" y="7" width="50" height="50" rx="25" fill="#4BC862"/>
-                    </svg>
-                    <svg className='color-box' xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
-                      <rect x="7.42236" y="7" width="50" height="50" rx="25" fill="#442BD6"/>
-                    </svg>
-                </div>
-              </div>
-              <div className="product-box-3">
-                <h3>Description</h3>
-                <div className="description-text">
-                  <p className='recycled-text'>Made from recycled plastic and minerals.</p>
-                  <p className='recycled-text'>Transform your walls with our Eco-friendly, lightweight wall tiles, designed for durability and style. These tiles offer:</p>
-                  <ul>
-                    {product.description.map((desc, index) => (
-                    <li key={index}>{desc}</li>
-                    ))}
-                  </ul>
-                  <p>Make the sustainable choice without compromising on quality or design.</p>
-                </div>
-              </div>
-              <div className="product-box-4">
-                <div className="quantity-selector">
-                    <button  onClick={() => handleQuantityChange('decrease')}>-</button>
-                    <span className='quantity'>{quantity}</span>
-                    <button onClick={() => handleQuantityChange('increase')}>+</button>
-                </div>
-                <div className="place-order-btn">
-                  <button className="order-button" onClick={handleOrder}>
-                    <img src={whatappsImg} alt="cart-icon" />
-                    <p className='place-order'>Place Order</p>
-                  </button>
-                </div>
+                ))}
+              </Slider>
+            </div>
+            <div className="color-selector-container">
+              <h3 className="select-text">Choose a Color</h3>
+              <div className="color-options">
+                {colorOptions.map((option, index) => (
+                  <div 
+                    key={index}
+                    className="color-option-wrapper"
+                    onMouseEnter={() => setHoveredColor(index)}
+                    onMouseLeave={() => setHoveredColor(null)}
+                  >
+                    <div 
+                      className={`color-circle ${selectedColor === index ? 'selected' : ''} ${hoveredColor === index ? 'hovered' : ''}`}
+                      style={{ backgroundColor: option.color }}
+                      onClick={() => handleColorSelect(index)}
+                    >
+                      {selectedColor === index && <span className="checkmark">✓</span>}
+                    </div>
+                    <span className={`color-name ${hoveredColor === index ? 'visible' : ''}`}>
+                      {option.name}
+                    </span>
+                  </div>
+                ))}
               </div>
             </div>
-        </div>
-        <div className="wrapper">
-            
-          <div className="content-container">
-              <h2>Explore More Products</h2>
-              <div className="product-btns">
-                <button>
-                  <img src={leftSide} alt="left-btn" />
-                </button>
-                <button>
-                  <img src={rightSide} alt="right-btn" />
-                </button>
+          </div>
+          
+          {/* Product Information */}
+          <div className="product-info">
+            <div className="product-box-1">
+              <h1>{product.name}</h1>
+              <div className="product-info-sub">
+                <p className="price">Rs. {product.price}</p>
+                <div className="rating">
+                  <span className="rating-stars">★ {product.rating}</span>
+                  <span className="reviews-count">💬 {product.reviews} Reviews</span>
+                </div>
               </div>
+              <p className="product-subtitle">{product.subtitle}</p>
+            </div>
+
+            {/* Description Section */}
+            <div className="product-box-3">
+              <h3>Description:</h3>
+              <div className="description-text">
+                <p className="recycled-text">- Made from recycled plastic and minerals, EcoTiles are <span className="highlight">lightweight, durable, and weatherproof</span>, perfect for wall cladding in homes and commercial spaces.</p>
+                <h4>Features:</h4>
+                <ul className="features-list">
+                  {product.description.map((desc, index) => (
+                    <li key={index} className="feature-item">
+                      <span className="checkmark">✅</span> {desc}
+                    </li>
+                  ))}
+                </ul>
+                <p className="upgrade-text">Upgrade your walls with eco-friendly tiles that combine style, durability, and sustainability.</p>
+                <p className="call-to-action">Make the smart choice today!</p>
+              </div>
+            </div>
+
+            {/* Color Selection Below */}
+           
+
+            {/* Quantity and Order Button */}
+            <div className="product-box-4">
+              <div className="quantity-selector">
+                <button 
+                  className="quantity-btn minus" 
+                  onClick={() => handleQuantityChange('decrease')}
+                >-</button>
+                <span className="quantity">{quantity}</span>
+                <button 
+                  className="quantity-btn plus"
+                  onClick={() => handleQuantityChange('increase')}
+                >+</button>
+              </div>
+              <button className="order-button" onClick={handleOrder}>
+                <img src={whatappsImg} alt="WhatsApp icon" />
+                <span className="place-order">Place Order</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Related Products Section */}
+        <div className="related-products-section">
+          <div className="section-header">
+            <h2>Explore More Products</h2>
+            <div className="product-btns">
+              <button>
+                <img src={leftSide} alt="Previous" />
+              </button>
+              <button>
+                <img src={rightSide} alt="Next" />
+              </button>
+            </div>
           </div>
           <div className="related-products">
-            {[boxsimg1, boxsimg3, boxImg4].map((img, index) => (
-            <div className="product-box" key={index}>
-              <img src={img} alt="Product" />
-                <div className="product-box-items">
-                  <div className="product-sub-box-items">
-                    <div className="product-box-main-text">
-                      <div className="product-box-main-text-frist">
-                        <p className="main-text">{product.name}</p>
-                        <p className="sub-text">Multiple Colors Available</p>
-                      </div>
-                      <p className="outer-text">Rs. {product.price}</p>
+            {relatedProducts.map((relatedProduct) => (
+              <div className="product-card" key={relatedProduct.id}>
+                <Link 
+                  to={`/products/${relatedProduct.id}`} 
+                  onClick={(e) => handleProductClick(relatedProduct.id, e)}
+                >
+                  <div className="product-image-container">
+                    <img src={relatedProduct.images[0]} alt={relatedProduct.name} />
+                    {relatedProduct.id > 2 && <span className="new-badge">New</span>}
+                  </div>
+                  <div className="product-details">
+                    <div className="product-title-price">
+                      <h3>{relatedProduct.name}</h3>
+                      <p className="product-price">Rs. {relatedProduct.price}</p>
                     </div>
-                    <div className="star-group">
+                    <p className="colors-available">{relatedProduct.id <= 2 ? "5 Colors Available" : "5 types of Pots available"}</p>
+                    <div className="product-rating">
                       <div className="stars">
-                        <img src={starFull} alt="Star-icon" />
-                        <img src={starFull} alt="Star-icon" />
-                        <img src={starFull} alt="Star-icon" />
-                        <img src={starFull} alt="Star-icon" />
-                        <img src={starhalf} alt="Star-icon" />
+                        {[...Array(5)].map((_, i) => (
+                          <span key={i} className="star">
+                            {i < Math.floor(relatedProduct.rating) ? "★" : 
+                             i === Math.floor(relatedProduct.rating) && relatedProduct.rating % 1 >= 0.5 ? "★" : "☆"}
+                          </span>
+                        ))}
                       </div>
-                      <p>(121)</p>
+                      <span className="review-count">({relatedProduct.reviews})</span>
+                    </div>
+                    <div className="product-actions">
+                      <button className="buy-button">Buy Now</button>
                     </div>
                   </div>
-                  <div className="product-sub-box-btns">
-                    <button className='frist-btn'>
-                      <p className="buy-btn">Buy Now</p>
-                    </button>
-                    <button className='second-btn'>
-                      <p className="add-cart">Add Cart</p>
-                    </button>
-                  </div>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
         </div>
-    </div>
+      </div>
     </>
   );
 };
 
-export default ProductDetail;
+export default ProductDetails;

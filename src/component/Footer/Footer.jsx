@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css';
-import {tablerIcon, ecobricksLogo,youtubeIcon, linkedinIcon} from "../../assets/Index";
+import {tablerIcon, ecobricksLogo,youtubeIcon, linkedinIcon,facebookIcon2, instagramIcon2} from "../../assets/Index";
 
 const Footer = () => {
   return (
@@ -13,8 +13,7 @@ const Footer = () => {
                 <img src={ecobricksLogo} alt="" />
                 <p>Ecobricks</p>
               </div>
-              <p className='logo-text-para'>Emerald Data Solutions, LLC <br />
-              6715 Portland Road Sandusky, OH 44870</p>
+              <p className='logo-text-para'>Office 1407, NSTP Building, NUST University, H-12, Islamabad</p>
             </div>
             <div className="join-email">
              <div className="join-text">
@@ -29,21 +28,21 @@ const Footer = () => {
               </div>
             </div>
             <div className="soical-icon">
-            <button className='icons' onClick={() => window.location.href = "#"}>
-                 <img src={youtubeIcon}/>           
+            <button className='icons' onClick={() => window.open("https://www.facebook.com/ecobricks.pk/", "_blank")}>
+                 <img className='img-icon' src={facebookIcon2}/>           
             </button>
-            <button className='icons' onClick={() => window.location.href = "https://www.linkedin.com/company/ecobricks1/"}>
+            <button className='icons' onClick={() => window.open("https://www.linkedin.com/company/ecobricks1/", "_blank")}>
                <img src={linkedinIcon}/>           
             </button>
-            <button className='icons' onClick={() => window.location.href = "https://www.linkedin.com/company/ecobricks1/"}>
-               <img src={linkedinIcon}/>           
+            <button className='icons' onClick={() => window.open("https://www.instagram.com/ecobricks.pk/", "_blank")}>
+               <img className='img-icon' src={instagramIcon2}/>           
             </button>
             </div>
             <div className="quick-links">
               <h6>Quick Links</h6>
               <div className="quick-links-items">
-                <p onClick={() => window.location.href = "#info"}>About </p>
-                <p onClick={() => window.location.href = "#"}>Why Us?</p>
+                <p onClick={() => window.location.href = "#"}>Contact Us</p>
+                <p onClick={() => window.location.href = "#question"}>FAQ</p>
                 <p onClick={() => window.location.href = "#product"}>Products</p>
                 <p onClick={() => window.location.href = "#project"}>Project</p>
               </div>
@@ -52,7 +51,7 @@ const Footer = () => {
           <div className="copy-right">
             <hr />
             <div className="copy-right-name">
-              <p><a href="#">support@eds.com</a></p>
+              <p><a href="#">info@theecobricks.com</a></p>
               <p><a href="#">©2024 Ecobricks. All rights reserved</a></p>
             </div>
           </div>

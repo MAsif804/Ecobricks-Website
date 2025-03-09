@@ -30,7 +30,7 @@ const Navbar = () => {
                         <a href="/">About Us</a>
                       </li>
               </ul>
-              <button className='contact-btn' onClick={() => window.location.href = "https://web.whatsapp.com/"}>
+              <button className='contact-btn' onClick={() => window.open("https://web.whatsapp.com/", "_blank")}>
                 <img src={whatappsImg}/>
                 <p>Contact</p>
               </button>

@@ -47,6 +47,25 @@ import plasticWaste from "./plastic-waste.png";
 import carbonWaste from "./carbon-waste.png";
 import waterWaste from "./water-waste.png";
 import boxImg4 from "./box-4.png";
+import instagramIcon2 from "./instagram-icon-2.svg";
+import facebookIcon2 from "./facebook-icon-2.svg";
+import leftSide1 from "./left-side-1.svg";
+import rightSide1 from "./right-side-1.svg";
+import plImg1 from "./pl-1.png";
+import plImg2 from "./pl-2.png";
+import plImg3 from "./pl-3.png"; 
+import plImg4 from "./pl-4.png";   
+import xlImg1 from "./xl-1.png";
+import xlImg2 from "./xl-2.png";   
+import xlImg3 from "./xl-3.png";
+import xlImg4 from "./xl-4.png";
+import xlImg5 from "./xl-5.png";
+import tlImg1 from "./tl-1.png";
+import tlImg2 from "./tl-2.png";
+import tlImg3 from "./tl-3.png";
+import tlImg4 from "./tl-4.png";
+import tlImg5 from "./tl-5.png";
+import tlImg from "./tl.png";
 
 
 
@@ -106,4 +125,23 @@ export {
     carbonWaste,
     waterWaste,
     boxImg4,
+    instagramIcon2,
+    facebookIcon2,
+    leftSide1,
+    rightSide1,
+    plImg1,
+    plImg2,
+    plImg3,
+    plImg4,
+    xlImg1, 
+    xlImg2,
+    xlImg3,
+    xlImg4,
+    xlImg5,
+    tlImg1,
+    tlImg2,
+    tlImg3, 
+    tlImg4,
+    tlImg5,
+    tlImg
 };

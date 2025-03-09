@@ -164,6 +164,12 @@ footer .footer-items .soical-icon .icons{
     
 }
 
+footer .footer-items .soical-icon .img-icon{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
 footer .footer-items .soical-icon .icons:hover{
     border: 1px solid var(--White-white-50, #FFF);
     opacity: 1;  
