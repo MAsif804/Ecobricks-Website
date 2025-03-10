@@ -19,7 +19,7 @@ const FAQ = () => {
     },
     {
       question: "Will it gets ruined in sun exposure?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
+      answer: "No, we add UV stabilizers and our product is coated with sun protection."
     }
   ];
 
