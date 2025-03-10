@@ -124,7 +124,7 @@ const ProductDetails = () => {
         const encodedMessage = encodeURIComponent(message);
         
         // You can replace this with your actual business phone number
-        const phoneNumber = "923064157551"; // Format: country code + number (no + or spaces)
+        const phoneNumber = "+923390046214"; // Format: country code + number (no + or spaces)
         
         // Create WhatsApp URL
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
