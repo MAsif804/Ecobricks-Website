@@ -51,7 +51,7 @@ const ProductDetails = () => {
     },
     {
       id: 3,
-      name: "EcoPots (L)",
+      name: "EcoPots (S)",
       price: "900",
       rating: 4.9,
       reviews: 121,
@@ -66,7 +66,7 @@ const ProductDetails = () => {
     },
     {
       id: 4,
-      name: "EcoPots (XL)",
+      name: "EcoPots (L)",
       price: "700",
       rating: 4.6,
       reviews: 121,
@@ -113,6 +113,7 @@ const ProductDetails = () => {
     alert(`Order placed for ${quantity} item(s) of ${product.name}`);
     const message = `Hello, I'd like to place an order for:
     - Product: ${product.name}
+    - Image: ${mainImage}
     - Price: Rs. ${product.price}
     - Quantity: ${quantity}
     - Color: ${colorOptions[selectedColor].name}
