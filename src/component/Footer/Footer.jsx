@@ -41,7 +41,7 @@ const Footer = () => {
             <div className="quick-links">
               <h6>Quick Links</h6>
               <div className="quick-links-items">
-                <p onClick={() => window.location.href = "#"}>Contact Us</p>
+                <p onClick={() => window.open("https://web.whatsapp.com/", "_blank")}>Contact Us</p>
                 <p onClick={() => window.location.href = "#question"}>FAQ</p>
                 <p onClick={() => window.location.href = "#product"}>Products</p>
                 <p onClick={() => window.location.href = "#project"}>Project</p>

@@ -172,6 +172,14 @@ const ProductDetails = () => {
       }
     ]
   };
+const sliderRef = React.useRef(null);
+  const goToNext = () => {
+    sliderRef.current.slickNext();
+  };
+  
+  const goToPrev = () => {
+    sliderRef.current.slickPrev();
+  };
 
   return (
     <>
@@ -281,51 +289,52 @@ const ProductDetails = () => {
         <div className="related-products-section">
           <div className="section-header">
             <h2>Explore More Products</h2>
+          
             <div className="product-btns">
-              <button>
+              <button onClick={goToPrev}>
                 <img src={leftSide} alt="Previous" />
               </button>
-              <button>
+              <button onClick={goToNext}>
                 <img src={rightSide} alt="Next" />
               </button>
             </div>
           </div>
-          <div className="related-products">
-            {relatedProducts.map((relatedProduct) => (
-              <div className="product-card" key={relatedProduct.id}>
-                <Link 
-                  to={`/products/${relatedProduct.id}`} 
-                  onClick={(e) => handleProductClick(relatedProduct.id, e)}
-                >
-                  <div className="product-image-container">
-                    <img src={relatedProduct.images[0]} alt={relatedProduct.name} />
-                    {relatedProduct.id > 2 && <span className="new-badge">New</span>}
-                  </div>
-                  <div className="product-details">
-                    <div className="product-title-price">
-                      <h3>{relatedProduct.name}</h3>
-                      <p className="product-price">Rs. {relatedProduct.price}</p>
+            <div className="related-products">
+              {relatedProducts.map((relatedProduct) => (
+                <div className="product-card" key={relatedProduct.id}>
+                  <Link 
+                    to={`/products/${relatedProduct.id}`} 
+                    onClick={(e) => handleProductClick(relatedProduct.id, e)}
+                  >
+                    <div className="product-image-container">
+                      <img src={relatedProduct.images[0]} alt={relatedProduct.name} />
+                      {relatedProduct.id > 2 && <span className="new-badge">New</span>}
                     </div>
-                    <p className="colors-available">{relatedProduct.id <= 2 ? "5 Colors Available" : "5 types of Pots available"}</p>
-                    <div className="product-rating">
-                      <div className="stars">
-                        {[...Array(5)].map((_, i) => (
-                          <span key={i} className="star">
-                            {i < Math.floor(relatedProduct.rating) ? "★" : 
-                             i === Math.floor(relatedProduct.rating) && relatedProduct.rating % 1 >= 0.5 ? "★" : "☆"}
-                          </span>
-                        ))}
+                    <div className="product-details">
+                      <div className="product-title-price">
+                        <h3>{relatedProduct.name}</h3>
+                        <p className="product-price">Rs. {relatedProduct.price}</p>
                       </div>
-                      <span className="review-count">({relatedProduct.reviews})</span>
+                      <p className="colors-available">{relatedProduct.id <= 2 ? "5 Colors Available" : "5 types of Pots available"}</p>
+                      <div className="product-rating">
+                        <div className="stars">
+                          {[...Array(5)].map((_, i) => (
+                            <span key={i} className="star">
+                              {i < Math.floor(relatedProduct.rating) ? "★" : 
+                              i === Math.floor(relatedProduct.rating) && relatedProduct.rating % 1 >= 0.5 ? "★" : "☆"}
+                            </span>
+                          ))}
+                        </div>
+                        <span className="review-count">({relatedProduct.reviews})</span>
+                      </div>
+                      <div className="product-actions">
+                        <button className="buy-button">Buy Now</button>
+                      </div>
                     </div>
-                    <div className="product-actions">
-                      <button className="buy-button">Buy Now</button>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </div>
+                  </Link>
+                </div>
+              ))}
+            </div>
         </div>
       </div>
     </>
