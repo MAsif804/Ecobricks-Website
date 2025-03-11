@@ -15,7 +15,7 @@ const FAQ = () => {
     },
     {
       question: "Where is Ecobricks located and does Ecobricks serve clients globally?",
-      answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
+      answer: "We are based in Islamabad, Pakistan. National and International Deliveries are available."
     },
     {
       question: "Will it gets ruined in sun exposure?",
