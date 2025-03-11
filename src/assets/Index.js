@@ -1,5 +1,5 @@
 import ecobricksLogo from './ecobricks-logo.png';
-import heroImg from "./hero-img.png";
+import heroImg from "./hero-img-0.png";
 import nustImg from "./nust-img.png";
 import wordImg from "./word-img.png";
 import undpImg from "./undp-img.png";
