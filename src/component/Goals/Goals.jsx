@@ -1,5 +1,6 @@
 import React from 'react'
 import './Goals.css';
+import 'animate.css';
 import {goodHealth, cleanWater, sustianableCite, responsible,lifebelow, lifeland, cunate,plasticWaste, carbonWaste, waterWaste} from "../../assets/Index";
 const Goals = () => {
   return (

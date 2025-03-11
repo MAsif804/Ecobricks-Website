@@ -74,6 +74,11 @@
     margin: 0;
     width: 334px;
     opacity: 0.8;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+    
 }
 
 #goals .wrapper .goal-sub-text{
