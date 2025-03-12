@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import './Testimonials.css';
+import "../Testimonial/Testimonial.css";
 import { leftSide, rightSide, frameIcon } from "../../assets/Index";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
