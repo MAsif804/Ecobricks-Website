@@ -137,6 +137,7 @@ nav .menu-icon,
        left: 32px;
        right: 32px;
        top : 16px;
+       padding: 8px 20px;
     }
     nav .menu-icon{
         display: block;

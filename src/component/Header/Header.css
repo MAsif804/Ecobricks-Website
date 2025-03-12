@@ -275,7 +275,7 @@ header .content-container .trusted-by .trusted-logos img{
     }
 
     header .content-container .top-text .cta .three-btn {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 12px;
     }
 
@@ -290,7 +290,7 @@ header .content-container .trusted-by .trusted-logos img{
     }
 
     header .two-btn {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 16px;
         align-items: center;
     }
@@ -333,7 +333,7 @@ header .content-container .trusted-by .trusted-logos img{
 
     header .content-container .two-btn .contact-btn,
     header .content-container .two-btn .view-btn {
-        width: 100%;
+        /* width: 100%; */
         max-width: 280px;
         justify-content: center;
     }
