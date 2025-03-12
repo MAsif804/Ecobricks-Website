@@ -240,7 +240,7 @@
     }
 
     #product .wrapper .content-container {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 24px;
         align-items: flex-start;
     }
@@ -249,10 +249,7 @@
         font-size: 36px;
     }
 
-    #product .product-btns {
-        width: 100%;
-        justify-content: flex-start;
-    }
+   
 
     #product .product-box {
         width: 85% !important;
@@ -261,7 +258,7 @@
 
 @media screen and (max-width: 768px) {
     #product .wrapper {
-        padding: 60px 0px 0px 30px;
+        padding: 60px 16px 16px 30px;
         gap: 24px;
     }
 
