@@ -163,8 +163,8 @@
 
     #info .wrapper .content-container {
         width: 100%;
-        align-items: center;
-        text-align: center;
+        /* align-items: center;
+        text-align: center; */
     }
 
     #info .wrapper .lets-talk {
@@ -172,17 +172,14 @@
         max-width: 500px;
     }
 
-    #info .wrapper .content-container .info-box-text {
-        align-items: center;
-    }
-
+   
     #info .wrapper .content-container .info-box-text h2 {
         font-size: 36px;
         line-height: 44px;
     }
 
     #info .wrapper .content-container .info-social-icon {
-        justify-content: center;
+        /* justify-content: center; */
         width: 100%;
     }
 }
@@ -193,7 +190,7 @@
     }
 
     #info .wrapper .content-container .info-box-text h2 {
-        font-size: 32px;
+        font-size: 36px;
         line-height: 40px;
     }
 
