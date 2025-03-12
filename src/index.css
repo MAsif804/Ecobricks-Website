@@ -35,3 +35,21 @@ a{
 .green{
     background: #417E36;
 }
+
+/* SmartPhone version */
+
+@media (max-width:720px) {
+    .wrapper{
+      
+       padding: 0 22px; 
+       max-width: 720px;    
+      
+    }
+    .content-container{
+      width: 100%;
+    
+    }
+  
+  
+    
+  }

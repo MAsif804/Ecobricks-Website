@@ -269,3 +269,52 @@ footer  .copy-right-name a{
     
 }
 
+@media (max-width:720px) {
+
+
+    footer .content-container{
+    
+        display: flex;
+        /* width: 375px; */
+        padding: 80px 16px 30px 16px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+    }
+
+    footer .footer-items{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+
+    #footer{
+       padding: 0px 32px; 
+    }
+
+    #contant .content-container .contact-detials h1{
+        padding-left:36px ;
+        padding-top: 3px;
+       
+    }
+
+    #contant .content-container .contact-detials p{
+        padding: 0 85px;
+       
+    }
+    #contant .wrapper .copyright{
+        padding-top: 16px;
+    }
+    
+    #contant{
+        position: relative;
+        padding: 0 22px;  
+        
+    }
+
+
+}
+

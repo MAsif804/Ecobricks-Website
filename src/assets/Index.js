@@ -66,6 +66,8 @@ import tlImg3 from "./tl-3.png";
 import tlImg4 from "./tl-4.png";
 import tlImg5 from "./tl-5.png";
 import tlImg from "./tl.png";
+import menuIcon from "./menu-icon.png";
+import closeIcon from "./close-icon.png";
 
 
 
@@ -143,5 +145,7 @@ export {
     tlImg3, 
     tlImg4,
     tlImg5,
-    tlImg
+    tlImg,
+    menuIcon,
+    closeIcon,
 };
