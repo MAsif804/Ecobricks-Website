@@ -21,7 +21,7 @@ const Info = () => {
               </div>
               <div className="info-contain-text">
                 <p className='mian-text'>Our email</p>
-                <p className='sub-text'>admin@inlights.com.pk</p>
+                <p className='sub-text'>info@theecobricks.com</p>
               </div>
             </div>
             <div className="info-sub-contant">
