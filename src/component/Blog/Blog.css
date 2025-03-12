@@ -1,4 +1,3 @@
-
 #blog .wrapper{
     display: flex;
     /* width: 1440px; */
@@ -56,6 +55,92 @@
     padding: 0px 90px 0px 90px;
 }
 
+/* Enhanced Responsive Styles */
+@media screen and (max-width: 1200px) {
+    #blog .wrapper {
+        padding: 50px 50px 20px 50px;
+    }
 
+    #blog .wrapper .blog-main-text .blog-main-heading,
+    #blog .wrapper .blog-main-text .blog-sub-heading {
+        font-size: 36px;
+        line-height: 48px;
+    }
 
+    #blog .wrapper .blog-paragraph {
+        font-size: 24px;
+        padding: 16px 28px;
+    }
 
+    #blog .wrapper .blog-img {
+        padding: 0px 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #blog .wrapper {
+        padding: 40px 40px 20px 40px;
+    }
+
+    #blog .wrapper .blog-main-text .blog-main-heading,
+    #blog .wrapper .blog-main-text .blog-sub-heading {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    #blog .wrapper .blog-paragraph {
+        font-size: 22px;
+        padding: 14px 24px;
+        letter-spacing: -0.44px;
+    }
+
+    #blog .wrapper .blog-img {
+        padding: 0px 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #blog .wrapper {
+        padding: 30px 30px 20px 30px;
+        gap: 16px;
+    }
+
+    #blog .wrapper .blog-main-text .blog-main-heading,
+    #blog .wrapper .blog-main-text .blog-sub-heading {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    #blog .wrapper .blog-paragraph {
+        font-size: 20px;
+        padding: 12px 20px;
+        letter-spacing: -0.4px;
+    }
+
+    #blog .wrapper .blog-img {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #blog .wrapper {
+        padding: 24px 20px 16px 20px;
+        gap: 14px;
+    }
+
+    #blog .wrapper .blog-main-text .blog-main-heading,
+    #blog .wrapper .blog-main-text .blog-sub-heading {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #blog .wrapper .blog-paragraph {
+        font-size: 18px;
+        padding: 10px 16px;
+        letter-spacing: -0.36px;
+    }
+
+    #blog .wrapper .blog-img {
+        padding: 0px 10px;
+    }
+}

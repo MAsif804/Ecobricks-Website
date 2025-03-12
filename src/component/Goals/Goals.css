@@ -110,3 +110,178 @@
     height: auto;
 }
 
+/* Enhanced Responsive Styles */
+@media screen and (max-width: 1200px) {
+    #goals .wrapper {
+        padding: 50px 50px 30px 50px;
+    }
+
+    #goals .wrapper .goal-main-text {
+        font-size: 42px;
+    }
+
+    #goals .wrapper .waste-material {
+        gap: 150px;
+    }
+
+    #goals .wrapper .waste-material .ton-text {
+        font-size: 36px;
+        width: 260px;
+    }
+
+    #goals .wrapper .waste-material .about-text {
+        font-size: 26px;
+        width: 290px;
+    }
+
+    #goals .wrapper .goal-sub-text {
+        font-size: 42px;
+    }
+
+    #goals .wrapper .content-container {
+        padding-left: 200px;
+        padding-right: 70px;
+    }
+
+    #goals .wrapper .content-container .golobal-img {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #goals .wrapper {
+        padding: 40px 40px 25px 40px;
+        gap: 16px;
+    }
+
+    #goals .wrapper .goal-main-text {
+        font-size: 36px;
+    }
+
+    #goals .wrapper .waste-material {
+        gap: 100px;
+        margin-bottom: 30px;
+    }
+
+    #goals .wrapper .waste-material .waste-items {
+        width: 25%;
+    }
+
+    #goals .wrapper .waste-material .ton-text {
+        font-size: 32px;
+        width: 230px;
+    }
+
+    #goals .wrapper .waste-material .about-text {
+        font-size: 24px;
+        width: 260px;
+    }
+
+    #goals .wrapper .goal-sub-text {
+        font-size: 36px;
+    }
+
+    #goals .wrapper .content-container {
+        padding-left: 150px;
+        padding-right: 50px;
+    }
+
+    #goals .wrapper .content-container .golobal-img {
+        width: 110px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #goals .wrapper {
+        padding: 30px 30px 20px 30px;
+    }
+
+    #goals .wrapper .goal-main-text {
+        font-size: 32px;
+    }
+
+    #goals .wrapper .waste-material {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 25px;
+    }
+
+    #goals .wrapper .waste-material .waste-items {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #goals .wrapper .waste-material .waste-img,
+    .water-img {
+        width: 50%;
+    }
+
+    #goals .wrapper .waste-material .ton-text {
+        font-size: 28px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #goals .wrapper .waste-material .about-text {
+        font-size: 22px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #goals .wrapper .goal-sub-text {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #goals .wrapper .content-container {
+        padding: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #goals .wrapper .content-container .golobal-img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #goals .wrapper {
+        padding: 25px 20px 15px 20px;
+        gap: 14px;
+    }
+
+    #goals .wrapper .goal-main-text {
+        font-size: 28px;
+    }
+
+    #goals .wrapper .waste-material {
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    #goals .wrapper .waste-material .waste-img,
+    .water-img {
+        width: 70%;
+    }
+
+    #goals .wrapper .waste-material .ton-text {
+        font-size: 24px;
+    }
+
+    #goals .wrapper .waste-material .about-text {
+        font-size: 20px;
+    }
+
+    #goals .wrapper .goal-sub-text {
+        font-size: 28px;
+    }
+
+    #goals .wrapper .content-container {
+        gap: 15px;
+    }
+
+    #goals .wrapper .content-container .golobal-img {
+        width: 90px;
+    }
+}

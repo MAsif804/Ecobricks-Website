@@ -83,6 +83,124 @@
 
 }
 
+/* Enhanced Responsive Styles */
+@media screen and (max-width: 1200px) {
+    #question .wrapper {
+        padding: 100px 60px 0px 60px;
+        gap: 50px;
+    }
+
+    #question .wrapper h1 {
+        font-size: 34px;
+    }
+
+    #question .wrapper .content-container .question-box {
+        padding: 22px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #question .wrapper {
+        padding: 80px 40px 0px 40px;
+        gap: 40px;
+    }
+
+    #question .wrapper h1 {
+        font-size: 32px;
+        width: 45%;
+    }
+
+    #question .wrapper .content-container .question-box {
+        padding: 20px;
+    }
+
+    #question .wrapper .content-container .question-box .question-title {
+        gap: 12px;
+    }
+
+    #question .wrapper .content-container .question-box .question-title .question-title-img p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    #question .wrapper .content-container .question-box .question-title .question-title-sub-text {
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #question .wrapper {
+        padding: 60px 30px 0px 30px;
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    #question .wrapper h1 {
+        font-size: 28px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #question .wrapper .content-container {
+        width: 100%;
+    }
+
+    #question .wrapper .content-container .question-box {
+        padding: 18px;
+        gap: 8px;
+    }
+
+    #question .wrapper .content-container .question-box .question-title {
+        gap: 10px;
+    }
+
+    #question .wrapper .content-container .question-box .question-title .question-title-img p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #question .wrapper .content-container .question-box .question-title .question-title-sub-text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #question .wrapper {
+        padding: 50px 20px 0px 20px;
+        gap: 24px;
+    }
+
+    #question .wrapper h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #question .wrapper .content-container {
+        gap: 12px;
+    }
+
+    #question .wrapper .content-container .question-box {
+        padding: 16px;
+        gap: 6px;
+    }
+
+    #question .wrapper .content-container .question-box .question-title {
+        gap: 8px;
+    }
+
+    #question .wrapper .content-container .question-box .question-title .question-title-img p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    #question .wrapper .content-container .question-box .question-title .question-title-sub-text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
 @media (max-width: 720px) {
     #question .wrapper{
         padding: 80px 16px 0px 16px;

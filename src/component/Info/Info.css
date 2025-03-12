@@ -140,12 +140,80 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+    #info .wrapper {
+        padding: 80px 40px;
+    }
 
+    #info .wrapper .content-container {
+        width: 35%;
+    }
 
+    #info .wrapper .lets-talk {
+        width: 50%;
+    }
+}
 
+@media screen and (max-width: 768px) {
+    #info .wrapper {
+        flex-direction: column-reverse;
+        padding: 60px 30px;
+        gap: 40px;
+    }
 
+    #info .wrapper .content-container {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
 
+    #info .wrapper .lets-talk {
+        width: 100%;
+        max-width: 500px;
+    }
 
+    #info .wrapper .content-container .info-box-text {
+        align-items: center;
+    }
 
+    #info .wrapper .content-container .info-box-text h2 {
+        font-size: 36px;
+        line-height: 44px;
+    }
 
+    #info .wrapper .content-container .info-social-icon {
+        justify-content: center;
+        width: 100%;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    #info .wrapper {
+        padding: 40px 20px;
+    }
+
+    #info .wrapper .content-container .info-box-text h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    #info .wrapper .content-container .info-contant-box .info-sub-contant {
+        gap: 15px;
+    }
+
+    #info .wrapper .content-container .info-contant-box .info-sub-contant .info-contant-img .icons {
+        width: 40px;
+        height: 40px;
+    }
+
+    #info .wrapper .content-container .info-contant-box .info-sub-contant .info-contant-img .icons img {
+        left: 10px;
+        top: 12px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #info .wrapper .content-container .info-social-icon {
+        gap: 20px;
+    }
+}
