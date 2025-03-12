@@ -32,7 +32,7 @@ const Info = () => {
               </div>
               <div className="info-contain-text">
                 <p className='mian-text'>Cell Us</p>
-                <p className='sub-text'>+92 3235353143</p>
+                <p className='sub-text'>+923390046214</p>
               </div>
             </div>
             <div className="info-sub-contant">
