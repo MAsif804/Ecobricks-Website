@@ -70,7 +70,7 @@ footer .footer-items .join-email{
 
 footer .footer-items .join-text{
     display: flex;
-    /* width: 233px; */
+    width: 233px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
@@ -261,7 +261,7 @@ footer  .copy-right-name a{
     text-decoration: none;
     color: var(--White-white-50, #FFF);
     font-family: var(--Font-Family-Inter, Inter);
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px; /* 142.857% */
@@ -362,7 +362,7 @@ footer  .copy-right-name a{
     }
 
     footer .footer-items .logo-text {
-        width: 100%;
+        width: 62%;
     }
 
     footer .footer-items .logo-ecobricks img {
@@ -419,7 +419,7 @@ footer  .copy-right-name a{
 
 @media screen and (max-width: 480px) {
     footer .content-container {
-        padding: 40px 20px 15px 20px;
+        padding: 80px 0px 30px 0px;
         gap: 20px;
     }
 
@@ -514,22 +514,16 @@ footer  .copy-right-name a{
     footer .footer-items {
         flex-direction: column;
         gap: 40px;
-        align-items: center;
+        /* align-items: center; */
         text-align: center;
     }
 
     footer .footer-items .logo-text {
-        width: 100%;
-        align-items: center;
+        width: 62%;
+        /* align-items: center; */
     }
 
-    footer .footer-items .join-email {
-        align-items: center;
-    }
-
-    footer .footer-items .join-text {
-        align-items: center;
-    }
+    
 
     footer .footer-items .soical-icon {
         flex-direction: row;
@@ -568,16 +562,12 @@ footer  .copy-right-name a{
     }
 
     footer .footer-items .emil-btn {
-        flex-direction: column;
+        /* flex-direction: column; */
         width: 100%;
         gap: 12px;
     }
 
     footer .footer-items .emil-btn #email {
-        width: 100%;
-    }
-
-    footer .footer-items .emil-btn button {
         width: 100%;
     }
 
@@ -598,7 +588,7 @@ footer  .copy-right-name a{
     
         display: flex;
         /* width: 375px; */
-        padding: 80px 16px 30px 16px;
+        padding: 80px 0px 30px 0px;
         flex-direction: column;
         align-items: center;
         gap: 32px;
@@ -608,7 +598,7 @@ footer  .copy-right-name a{
     footer .footer-items{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
         gap: 60px;
     }
 
