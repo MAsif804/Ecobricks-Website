@@ -218,7 +218,7 @@
     }
 
     #project .wrapper .content-container {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 20px;
         align-items: flex-start;
     }
@@ -229,7 +229,7 @@
 
     #project .wrapper .content-container .project-btns {
         width: 100%;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
     }
 
     #project .project-box {
@@ -252,7 +252,7 @@
 
 @media screen and (max-width: 768px) {
     #project .wrapper {
-        padding: 60px 0px 0px 30px;
+        padding: 60px 16px 16px 30px;
         gap: 24px;
     }
 
