@@ -376,8 +376,8 @@ footer  .copy-right-name a{
     }
 
     footer .footer-items .logo-text-para {
-        font-size: 12px;
-        line-height: 17px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     footer .footer-items .join-text h6 {
@@ -406,7 +406,7 @@ footer  .copy-right-name a{
 
     footer .copy-right-name {
         padding: 24px 0;
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 16px;
         align-items: center;
         text-align: center;
@@ -545,9 +545,10 @@ footer  .copy-right-name a{
     }
 
     footer .copy-right-name {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         gap: 10px;
+        padding: 0;
     }
 }
 
@@ -607,7 +608,7 @@ footer  .copy-right-name a{
     footer .footer-items{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 60px;
     }
 
