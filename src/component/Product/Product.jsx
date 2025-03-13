@@ -80,8 +80,8 @@ import {
 const productList = [
   { id: 1, name: "EcoTiles (S) - 8 x 4 inch", price: "190/sqft", image: ecotilelager4, subtext: "Colors Available" },
   { id: 2, name: "EcoTiles (L) - 12x6 inch", price: "200/sqft", image: comparison, subtext: "Colors Available" },
-  { id: 3, name: "EcoPots (S)", price: "900", image: ecopotSmall6, subtext: "Various Sizes Available", isNew: true },
-  { id: 4, name: "EcoPots (L)", price: "1100", image: ecopotLager4, subtext: "Various Sizes Available" },
+  { id: 3, name: "EcoPots (S)", price: "600", image: ecopotSmall6, subtext: "Various Sizes Available", isNew: true },
+  { id: 4, name: "EcoPots (L)", price: "1000", image: ecopotLager4, subtext: "Various Sizes Available" },
 ];
 
 const Product = () => {

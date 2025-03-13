@@ -52,7 +52,7 @@ const ProductDetails = () => {
     {
       id: 3,
       name: "EcoPots (S)",
-      price: "900",
+      price: "600",
       rating: 4.9,
       reviews: 121,
       subtitle: "Sustainable Gardening Made Stylish",
@@ -67,7 +67,7 @@ const ProductDetails = () => {
     {
       id: 4,
       name: "EcoPots (L)",
-      price: "700",
+      price: "1000",
       rating: 4.6,
       reviews: 121,
       subtitle: "Small Pots, Big Impact",
