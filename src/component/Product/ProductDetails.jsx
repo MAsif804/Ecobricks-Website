@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './ProductDetails.css';
 import { 
-  boxsimg1, boxsimg2, boxsimg3, boxImg4,
-   whatappsImg,
-  rightSide, leftSide, leftSide1,rightSide1,plImg1,plImg2,plImg3,plImg4,xlImg1,xlImg2,xlImg3,xlImg4,xlImg5,tlImg1,tlImg2,tlImg3,tlImg4,tlImg5,tlImg,
+  boxsimg1, boxsimg2, boxsimg3, boxImg4, whatappsImg,
+  rightSide, leftSide, leftSide1,rightSide1,plImg4,xlImg1,xlImg3,xlImg5,tlImg,dimenSmall1,dimenSmall2,ecopotSmall1,ecopotSmall2,ecopotSmall3,ecopotSmall5,ecopotSmall6,ecopotSmall7,ecopotSmall8,ecopotSmall9,
+  ecopotSmall10,ecopotSmall11,ecopotSmall12,ecopotSmall13,ecopotSmall14,ecopotSmall15,ecopotSmall16,ecopotSmall18,ecopotSmall19,ecopotSmall29,ecopotSmall30,dimenLager1,ecopotLager4,ecopotLager17,ecopotLager20,ecopotLager21,ecopotLager22,ecopotLager23,ecopotLager24,ecopotLager25,ecopotLager26,ecopotLager27,ecopotLager28,comparison,dimenlager,ecotilelager2,ecotilelager3,ecotilelager4,ecotilelager5,ecotilelager6,ecotilelager7,
 } from '../../assets/Index';
 import Navbar_pp from "../Navbar_pp/Navbar_pp";
 
@@ -33,7 +33,7 @@ const ProductDetails = () => {
         "Weatherproof Protection:  Resists harsh conditions for long-lasting performance",
         "Thermal Insulation: Enhances energy efficiency year-round",
       ],
-      images: [boxsimg1,tlImg1, tlImg2, tlImg3, tlImg4, tlImg5],  
+      images: [boxsimg1,comparison,dimenlager,tlImg,ecotilelager2,ecotilelager3,ecotilelager4,ecotilelager5,ecotilelager6,ecotilelager7,],  
     },
     {
       id: 2,
@@ -47,7 +47,7 @@ const ProductDetails = () => {
         "Weatherproof Protection:  Resists harsh conditions for long-lasting performance",
         "Thermal Insulation: Enhances energy efficiency year-round",
       ],
-      images: [boxsimg2,tlImg,tlImg1, tlImg2, tlImg3, tlImg4, tlImg5],
+      images: [boxsimg2,comparison,dimenlager,tlImg,ecotilelager2,ecotilelager3,ecotilelager4,ecotilelager5,ecotilelager6,ecotilelager7,],
     },
     {
       id: 3,
@@ -62,7 +62,7 @@ const ProductDetails = () => {
         "Lightweight: Easy to move and reposition as needed.",
        
       ],
-      images: [plImg4,plImg3, plImg2, plImg1],
+      images: [plImg4,dimenSmall1,dimenSmall2,ecopotSmall1,ecopotSmall2,ecopotSmall3,ecopotSmall5,ecopotSmall6,ecopotSmall7,ecopotSmall8,ecopotSmall9,ecopotSmall10,ecopotSmall11,ecopotSmall12,ecopotSmall13,ecopotSmall14,ecopotSmall15,ecopotSmall16,ecopotSmall18,ecopotSmall19,ecopotSmall29,ecopotSmall30 ],
     },
     {
       id: 4,
@@ -77,7 +77,7 @@ const ProductDetails = () => {
         "Lightweight: Easy to move and reposition as needed.",
         
       ],
-      images: [boxsimg3, xlImg1, xlImg2, xlImg3, xlImg4, xlImg5],
+      images: [boxsimg3,dimenLager1,ecopotLager4,ecopotLager17,ecopotLager20,ecopotLager21,ecopotLager22,ecopotLager23,ecopotLager24,ecopotLager25,ecopotLager26,ecopotLager27,ecopotLager28, xlImg1,xlImg3,xlImg5],
     }
  ];
 

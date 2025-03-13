@@ -57,6 +57,11 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.slick-prev:before{
+  content:"" ;
+  display: none !important;
+}
+
 /* Custom styling for slick arrows */
 .custom-slick-prev,
 .custom-slick-next {

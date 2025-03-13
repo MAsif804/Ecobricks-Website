@@ -68,6 +68,51 @@ import tlImg5 from "./tl-5.png";
 import tlImg from "./tl.png";
 import menuIcon from "./menu-icon.png";
 import closeIcon from "./close-icon.png";
+import dimenSmall1 from "./dimen-small-1.png";
+import dimenSmall2 from "./dimen-small-2.png";
+import ecopotSmall1 from "./ecopot-small-1.png";
+import ecopotSmall2 from "./ecopot-small-2.png";
+import ecopotSmall3 from "./ecopot-small-3.png";   
+import ecopotSmall5 from "./ecopot-small-5.png";
+import ecopotSmall6 from "./ecopot-small-6.png";
+import ecopotSmall7 from "./ecopot-small-7.png";
+import ecopotSmall8 from "./ecopot-small-8.png";
+import ecopotSmall9 from "./ecopot-small-9.png";
+import ecopotSmall10 from "./ecopot-small-10.png";
+import ecopotSmall11 from "./ecopot-small-11.png";
+import ecopotSmall12 from "./ecopot-small-12.png";   
+import ecopotSmall13 from "./ecopot-small-13.png";
+import ecopotSmall14 from "./ecopot-small-14.png";
+import ecopotSmall15 from "./ecopot-small-15.png";
+import ecopotSmall16 from "./ecopot-small-16.png";   
+import ecopotSmall18 from "./ecopot-small-18.png";
+import ecopotSmall19 from "./ecopot-small-19.png";
+import ecopotSmall29 from "./ecopot-small-29.png";
+import ecopotSmall30 from "./ecopot-small-30.png";
+import dimenLager1 from "./dimen-lager-1.png";
+import ecopotLager4 from "./ecopot-lager-4.png";
+import ecopotLager17 from "./ecopot-lager-17.png";
+import ecopotLager20 from "./ecopot-lager-20.png";
+import ecopotLager21 from "./ecopot-lager-21.png";   
+import ecopotLager22 from "./ecopot-lager-22.png";
+import ecopotLager23 from "./ecopot-lager-23.png";
+import ecopotLager24 from "./ecopot-lager-24.png";
+import ecopotLager25 from "./ecopot-lager-25.png";   
+import ecopotLager26 from "./ecopot-lager-26.png";
+import ecopotLager27 from "./ecopot-lager-27.png";
+import ecopotLager28 from "./ecopot-lager-28.png";
+import comparison from "./comparison.png";
+import dimenlager from "./dimen-lager.png";
+import ecotilelager2 from "./ecotile-lager-2.png";
+import ecotilelager3 from "./ecotile-lager-3.png";
+import ecotilelager4 from "./ecotile-lager-4.png";
+import ecotilelager5 from "./ecotile-lager-5.png";
+import ecotilelager6 from "./ecotile-lager-6.png";
+import ecotilelager7 from "./ecotile-lager-7.png";
+ 
+
+
+
 
 
 
@@ -148,4 +193,47 @@ export {
     tlImg,
     menuIcon,
     closeIcon,
+    dimenSmall1,
+    dimenSmall2,
+    ecopotSmall1,
+    ecopotSmall2,
+    ecopotSmall3,
+    ecopotSmall5,
+    ecopotSmall6,
+    ecopotSmall7,
+    ecopotSmall8,
+    ecopotSmall9,
+    ecopotSmall10,
+    ecopotSmall11,
+    ecopotSmall12,
+    ecopotSmall13,
+    ecopotSmall14,
+    ecopotSmall15,
+    ecopotSmall16,
+    ecopotSmall18,
+    ecopotSmall19,
+    ecopotSmall29,
+    ecopotSmall30,
+    dimenLager1,
+    ecopotLager4,
+    ecopotLager17,
+    ecopotLager20,
+    ecopotLager21,
+    ecopotLager22,
+    ecopotLager23,
+    ecopotLager24,
+    ecopotLager25,
+    ecopotLager26,
+    ecopotLager27,
+    ecopotLager28,
+    comparison,
+    dimenlager,
+    ecotilelager2,
+    ecotilelager3,    
+    ecotilelager4,
+    ecotilelager5,    
+    ecotilelager6,
+    ecotilelager7,
+
 };
+
