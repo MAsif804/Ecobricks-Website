@@ -105,9 +105,27 @@
     padding-left: 261px;
     padding-right: 89px;
 }
-#goals .wrapper .content-container .golobal-img{
+#goals .wrapper .content-container a {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#goals .wrapper .content-container a:hover {
+    transform: translateY(-8px);
+}
+
+#goals .wrapper .content-container .golobal-img {
     width: 150px;
     height: auto;
+    transition: all 0.3s ease-in-out;
+    filter: brightness(1);
+}
+
+#goals .wrapper .content-container a:hover .golobal-img {
+    filter: brightness(1.1);
+    transform: scale(1.05);
 }
 
 /* Enhanced Responsive Styles */
