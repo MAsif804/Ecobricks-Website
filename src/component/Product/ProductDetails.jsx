@@ -33,7 +33,7 @@ const ProductDetails = () => {
         "Weatherproof Protection:  Resists harsh conditions for long-lasting performance",
         "Thermal Insulation: Enhances energy efficiency year-round",
       ],
-      images: [boxsimg1,comparison,dimenlager,tlImg,ecotilelager2,ecotilelager3,ecotilelager4,ecotilelager5,ecotilelager6,ecotilelager7,],  
+      images: [ecotilelager4,comparison,dimenlager,tlImg,ecotilelager2,ecotilelager3,ecotilelager5,ecotilelager6,ecotilelager7,],  
     },
     {
       id: 2,
@@ -47,7 +47,7 @@ const ProductDetails = () => {
         "Weatherproof Protection:  Resists harsh conditions for long-lasting performance",
         "Thermal Insulation: Enhances energy efficiency year-round",
       ],
-      images: [boxsimg2,comparison,dimenlager,tlImg,ecotilelager2,ecotilelager3,ecotilelager4,ecotilelager5,ecotilelager6,ecotilelager7,],
+      images: [dimenlager,comparison,tlImg,ecotilelager2,ecotilelager3,,ecotilelager5,ecotilelager6,ecotilelager7,],
     },
     {
       id: 3,
@@ -62,7 +62,7 @@ const ProductDetails = () => {
         "Lightweight: Easy to move and reposition as needed.",
        
       ],
-      images: [plImg4,dimenSmall1,dimenSmall2,ecopotSmall1,ecopotSmall2,ecopotSmall3,ecopotSmall5,ecopotSmall6,ecopotSmall7,ecopotSmall8,ecopotSmall9,ecopotSmall10,ecopotSmall11,ecopotSmall12,ecopotSmall13,ecopotSmall14,ecopotSmall15,ecopotSmall16,ecopotSmall18,ecopotSmall19,ecopotSmall29,ecopotSmall30 ],
+      images: [ecopotSmall6,dimenSmall1,dimenSmall2,ecopotSmall1,ecopotSmall2,ecopotSmall3,ecopotSmall5,ecopotSmall7,ecopotSmall8,ecopotSmall9,ecopotSmall10,ecopotSmall11,ecopotSmall12,ecopotSmall13,ecopotSmall14,ecopotSmall15,ecopotSmall16,ecopotSmall18,ecopotSmall19,ecopotSmall29,ecopotSmall30 ],
     },
     {
       id: 4,
