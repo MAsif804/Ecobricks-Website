@@ -638,9 +638,30 @@
     padding: 60px 20px;
   }
 
+  .product-info h1 {
+    font-size: 40px;
+  }
+
+  .price {
+    font-size: 30px;
+  }
+
+  .product-subtitle {
+    font-size: 24px;
+  }
+
   .product-box-3{
     width: unset;
     height: unset;;
+  }
+  .product-box-3 h3{
+    font-size: 24px;
+  }
+  ..description-text{
+    font-size: 20px;
+  }
+  .main-image{
+    height: unset;
   }
   
   .product-card {
