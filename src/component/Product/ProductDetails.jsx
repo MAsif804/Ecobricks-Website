@@ -34,6 +34,7 @@ const ProductDetails = () => {
         "Thermal Insulation: Enhances energy efficiency year-round",
       ],
       images: [ecotilelager4,comparison,dimenlager,tlImg,ecotilelager2,ecotilelager3,ecotilelager5,ecotilelager6,ecotilelager7,],  
+      hoverImage: ecotilelager2
     },
     {
       id: 2,
@@ -48,6 +49,7 @@ const ProductDetails = () => {
         "Thermal Insulation: Enhances energy efficiency year-round",
       ],
       images: [dimenlager,comparison,tlImg,ecotilelager2,ecotilelager3,,ecotilelager5,ecotilelager6,ecotilelager7,],
+      hoverImage: ecotilelager7
     },
     {
       id: 3,
@@ -63,6 +65,7 @@ const ProductDetails = () => {
        
       ],
       images: [ecopotSmall6,dimenSmall1,dimenSmall2,ecopotSmall1,ecopotSmall2,ecopotSmall3,ecopotSmall5,ecopotSmall7,ecopotSmall8,ecopotSmall9,ecopotSmall10,ecopotSmall11,ecopotSmall12,ecopotSmall13,ecopotSmall14,ecopotSmall15,ecopotSmall16,ecopotSmall18,ecopotSmall19,ecopotSmall29,ecopotSmall30 ],
+      hoverImage: ecopotSmall8
     },
     {
       id: 4,
@@ -78,6 +81,7 @@ const ProductDetails = () => {
         
       ],
       images: [boxsimg3,dimenLager1,ecopotLager4,ecopotLager17,ecopotLager20,ecopotLager21,ecopotLager22,ecopotLager23,ecopotLager24,ecopotLager25,ecopotLager26,ecopotLager27,ecopotLager28, xlImg1,xlImg3,xlImg5],
+      hoverImage: ecopotLager23
     }
  ];
 
@@ -100,6 +104,7 @@ const ProductDetails = () => {
   const [quantity, setQuantity] = useState(1);
   const [selectedColor, setSelectedColor] = useState(0);
   const [hoveredColor, setHoveredColor] = useState(null);
+  const [hoveredProduct, setHoveredProduct] = useState(null);
 
   const handleThumbnailClick = (img) => {
     setMainImage(img);
@@ -290,7 +295,6 @@ const sliderRef = React.useRef(null);
         <div className="related-products-section">
           <div className="section-header">
             <h2>Explore More Products</h2>
-          
             <div className="product-btns">
               <button onClick={goToPrev}>
                 <img src={leftSide} alt="Previous" />
@@ -300,42 +304,51 @@ const sliderRef = React.useRef(null);
               </button>
             </div>
           </div>
-            <div className="related-products">
-              {relatedProducts.map((relatedProduct) => (
-                <div className="product-card" key={relatedProduct.id}>
-                  <Link 
-                    to={`/products/${relatedProduct.id}`} 
-                    onClick={(e) => handleProductClick(relatedProduct.id, e)}
-                  >
-                    <div className="product-image-container">
-                      <img src={relatedProduct.images[0]} alt={relatedProduct.name} />
-                      {relatedProduct.id > 2 && <span className="new-badge">New</span>}
+          <div className="related-products">
+            {relatedProducts.map((relatedProduct) => (
+              <div 
+                className="product-card" 
+                key={relatedProduct.id}
+                onMouseEnter={() => setHoveredProduct(relatedProduct.id)}
+                onMouseLeave={() => setHoveredProduct(null)}
+              >
+                <Link 
+                  to={`/products/${relatedProduct.id}`} 
+                  onClick={(e) => handleProductClick(relatedProduct.id, e)}
+                >
+                  <div className="product-image-container">
+                    <img 
+                      src={hoveredProduct === relatedProduct.id ? relatedProduct.hoverImage : relatedProduct.images[0]} 
+                      alt={relatedProduct.name}
+                      className={hoveredProduct === relatedProduct.id ? 'hover' : ''}
+                    />
+                    {relatedProduct.id > 2 && <span className="new-badge">New</span>}
+                  </div>
+                  <div className="product-details">
+                    <div className="product-title-price">
+                      <h3>{relatedProduct.name}</h3>
+                      <p className="product-price">Rs. {relatedProduct.price}</p>
                     </div>
-                    <div className="product-details">
-                      <div className="product-title-price">
-                        <h3>{relatedProduct.name}</h3>
-                        <p className="product-price">Rs. {relatedProduct.price}</p>
+                    <p className="colors-available">{relatedProduct.id <= 2 ? "5 Colors Available" : "5 types of Pots available"}</p>
+                    <div className="product-rating">
+                      <div className="stars">
+                        {[...Array(5)].map((_, i) => (
+                          <span key={i} className="star">
+                            {i < Math.floor(relatedProduct.rating) ? "★" : 
+                            i === Math.floor(relatedProduct.rating) && relatedProduct.rating % 1 >= 0.5 ? "★" : "☆"}
+                          </span>
+                        ))}
                       </div>
-                      <p className="colors-available">{relatedProduct.id <= 2 ? "5 Colors Available" : "5 types of Pots available"}</p>
-                      <div className="product-rating">
-                        <div className="stars">
-                          {[...Array(5)].map((_, i) => (
-                            <span key={i} className="star">
-                              {i < Math.floor(relatedProduct.rating) ? "★" : 
-                              i === Math.floor(relatedProduct.rating) && relatedProduct.rating % 1 >= 0.5 ? "★" : "☆"}
-                            </span>
-                          ))}
-                        </div>
-                        <span className="review-count">({relatedProduct.reviews})</span>
-                      </div>
-                      <div className="product-actions">
-                        <button className="buy-button">Buy Now</button>
-                      </div>
+                      <span className="review-count">({relatedProduct.reviews})</span>
                     </div>
-                  </Link>
-                </div>
-              ))}
-            </div>
+                    <div className="product-actions">
+                      <button className="buy-button">Buy Now</button>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>
