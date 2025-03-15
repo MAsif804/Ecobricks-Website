@@ -623,6 +623,10 @@
   .product-detail-container {
     padding: 80px 30px;
   }
+  .product-box-3{
+    width: unset;
+    height: unset;;
+  }
   
   .product-card {
     width: 45%;

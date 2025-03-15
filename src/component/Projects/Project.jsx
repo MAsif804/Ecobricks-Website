@@ -158,6 +158,8 @@ const Project = () => {
     centerPadding: '20px',
     slidesToScroll: 1,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1024,
