@@ -637,6 +637,11 @@
   .product-detail-container {
     padding: 60px 20px;
   }
+
+  .product-box-3{
+    width: unset;
+    height: unset;;
+  }
   
   .product-card {
     width: 100%;
