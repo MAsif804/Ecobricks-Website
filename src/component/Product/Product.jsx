@@ -31,7 +31,7 @@ const productList = [
   { 
     id: 3, 
     name: "EcoPots (S)", 
-    price: "600", 
+    price: "700", 
     image: ecopotSmall6,
     hoverImage: ecopotSmall8, 
     subtext: "Various Sizes Available", 
