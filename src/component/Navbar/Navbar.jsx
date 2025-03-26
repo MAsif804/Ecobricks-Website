@@ -28,7 +28,7 @@ const Navbar = () => {
                           <a href="#info">About Us</a>
                         </li>
                 </ul>
-                <button className='contact-btn' onClick={() => window.open("https://wa.me/923390046214", "_blank")}>
+                <button className='contact-btn' onClick={() => window.open(" https://wa.me/923390046214 ", "_blank")}>
                   <img src={whatappsImg}/>
                   <p>Contact</p>
                 </button>
