@@ -20,7 +20,7 @@ const Header = () => {
             </div>
               <p className='hero-para'>Accelerating the world's shift to zero waste through innovative materials, sustainable technology, and eco-conscious design.</p>
               <div className="two-btn">
-                <button className='contact-btn' onClick={() => window.open("https://web.whatsapp.com/")}>
+                <button className='contact-btn' onClick={() => window.open("https://wa.me/923390046214")}>
                 <img src={whatappsImg}/>
                 <p>Contact</p>
               </button>
